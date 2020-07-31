@@ -1,0 +1,815 @@
+% L4DC Bib, created 06/07/2020, 13:03:50
+
+@Proceedings{L4DC2020,
+    booktitle = {Proceedings of the 2nd Conference on Learning for Dynamics and Control},
+    name = {Learning for Dynamics and Control},
+    shortname = {L4DC},
+    editor = {Alexandre M. Bayen and Ali Jadbabaie and George Pappas and Pablo A. Parrilo and Benjamin Recht and Claire Tomlin and Melanie Zeilinger},
+    url = {https://sites.google.com/berkeley.edu/l4dc/home},
+    volume = {120},
+    year = {2020},
+    start = {2020-06-10},
+    end = {2020-06-11},
+    published = {2020-07-31},
+    url = {http://l4dc.org},
+    address = {The Cloud}
+}
+
+@inproceedings{Bayen20,
+	Author={Alexandre M.~Bayen and Ali Jadbabaie and George Pappas and Pablo A.~Parrilo
+  and Benjamin Recht and Claire Tomlin and Melanie Zeilinger},
+	Title={Preface},
+	Pages={1--4},
+	Abstract={Some remarks from the organizers about L4DC2020.}}
+
+@inproceedings{BuissonFenet20,
+	Author={Mona Buisson-Fenet and Friedrich Solowjow and Sebastian Trimpe},
+	Title={Actively Learning Gaussian Process Dynamics},
+	Pages={5--15},
+	Abstract={Despite the availability of ever more data enabled through modern sensor and computer technology, it still remains an open problem to learn dynamical systems in a sample-efficient way.We propose active learning strategies that leverage information-theoretical properties arising naturally during Gaussian process regression, while respecting constraints on the sampling process imposed by the system dynamics. Sample points are selected in regions with high uncertainty, leading to exploratory behavior and data-efficient training of the model.All results are verified in an extensive numerical benchmark.}}
+
+
+@inproceedings{Sun20,
+	Author={Yue Sun and Samet Oymak and Maryam Fazel},
+	Title={Finite Sample System Identification: Optimal Rates and the Role of Regularization},
+	Pages={16--25},
+	Abstract={This paper studies the optimality of regularized regression for low order linear system identification. The nuclear norm of the system's Hankel matrix is added as a regularizer to the least squares cost function due to the following advantages: (1) its easy to tune regularzation weight, (2) lower sample complexity, (3) returning a Hankel matrix with a clear singular value gap, which robustly recovers a low-order linear system from noisy output observations. Recently, the performance of unregularized least squares formulations have been studied statistically in terms of finite sample complexity and recovery error; however, no results are known for the regularized approach. In this work, we show that with the advantage of sample complexity kept, the regularized algorithm beats unregularized least squares in Hankel spectral norm bound.}}
+
+
+@inproceedings{Doan20,
+	Author={Thinh Doan and Justin Romberg},
+	Title={Finite-Time Performance of Distributed Two-Time-Scale Stochastic Approximation},
+	Pages={26--36},
+	Abstract={Two-time-scale stochastic approximation is a popular iterative method for finding the solution of a system of two equations. Such methods have found broad applications in many areas, especially in machine learning and reinforcement learning. In this paper, we propose a distributed variant of this method over a network of agents, where the agents use two graphs representing their communication at different speeds due to the nature of their two-time-scale updates. Our main contribution is to provide a finite-time analysis for the performance of the proposed method. In particular, we establish an upper bound for the convergence rates of the mean square errors at the agents to zero as a function of the step sizes and the network topology. We believe that the proposed method and analysis studied in this paper can be applicable to many other interesting applications. }}
+
+
+@inproceedings{Breschi20a,
+	Author={Valentina Breschi and Simone Formentin},
+	Title={Virtual Reference Feedback Tuning with data-driven reference model selection},
+	Pages={37--45},
+	Abstract={In control applications where finding a model of the plant is the most costly and time consuming task, Virtual Reference Feedback Tuning (VRFT) represents a valid - purely data-driven - alternative for the design of model reference controllers. However, the selection of a proper reference model within a model-free setting is known to be a critical task, with this model typically playing the role of a hyper-parameter. In this work, we extend the VRFT methodology to compute both a proper reference model and the corresponding optimal controller parameters from data by means of Particle Swarm optimization. The effectiveness of the proposed approach is illustrated on a benchmark simulation example.}}
+
+
+@inproceedings{Breschi20b,
+	Author={Valentina Breschi and Simone Formentin},
+	Title={Direct data-driven control with embedded anti-windup compensation},
+	Pages={46--54},
+	Abstract={Input saturation is an ubiquitous nonlinearity in control systems and arises from the fact that all actuators are subject to a maximum power, thereby resulting in a hard limitation on the allowable magnitude of the input effort. In the scientific literature, anti-windup augmentation has been proposed to recover the desired linear closed-loop dynamics during transients, but the effectiveness of such a compensation is strongly linked to the accuracy of the mathematical model of the plant. In this work, it is shown that a feedback controller with embedded anti-windup compensator can be directly identified from data, by suitably extending the existing data-driven design theory. The effectiveness of the resulting method is illustrated on a benchmark simulation example.}}
+
+
+@inproceedings{Ruiz20,
+	Author={Trevor Ruiz and Sharmodeep Bhattacharyya and Mahesh Balasubramanian and Kristofer Bouchard},
+	Title={Sparse and Low-bias Estimation of High Dimensional Vector Autoregressive Models},
+	Pages={55--64},
+	Abstract={Vector autoregressive ($VAR$) models are widely used for causal discovery and forecasting in multivariate time series analysis. In the high-dimensional setting, which is increasingly common in fields such as neuroscience and econometrics, model parameters are inferred by $L_1$-regularized maximum likelihood (RML). A well-known feature of RML inference is that in general the technique produces a trade-off between sparsity and bias that depends on the choice of the regularization hyperparameter. In the context of multivariate time series analysis, sparse estimates are favorable for causal discovery and low-bias estimates are favorable for forecasting. However, owing to a paucity of research on hyperparameter selection methods, practitioners must rely on \textit{ad-hoc} methods such as cross-validation (or manual tuning). The particular balance that such approaches achieve between the two goals --- causal discovery and forecasting --- is poorly understood. Our paper investigates this behavior and proposes a method ($UoI_{VAR}$) that achieves a better balance between sparsity and bias when the underlying causal influences are in fact sparse. We demonstrate through simulation that RML with a hyperparameter selected by cross-validation tends to overfit, producing relatively dense estimates. We further demonstrate that $UoI_{VAR}$ much more effectively approximates the correct sparsity pattern with only a minor compromise in model fit, particularly so for larger data dimensions, and that the estimates produced by $UoI_{VAR}$ exhibit less bias. We conclude that our method achieves improved performance especially well-suited to applications involving simultaneous causal discovery and forecasting in high-dimensional settings.}}
+
+
+@inproceedings{Abuduweili20,
+	Author={Abulikemu Abuduweili and Changliu Liu},
+	Title={Robust Online Model Adaptation by Extended Kalman Filter with Exponential Moving Average and Dynamic Multi-Epoch Strategy},
+	Pages={65--74},
+	Abstract={High fidelity behavior prediction of intelligent agents is critical in many applications. However, the prediction model trained on the training set may not generalize to the testing set due to domain shift and time variance. The challenge motivates the adoption of online adaptation algorithms to update prediction models in real-time to improve the prediction performance. Inspired by Extended Kalman Filter (EKF), this paper introduces a series of online adaptation methods, which are applicable to neural network-based models. A base adaptation algorithm Modified EKF with forgetting factor (MEKF_lambda) is introduced first, followed by exponential moving average filtering techniques. Then this paper introduces a dynamic multi-epoch update strategy to effectively utilize samples received in real time. With all these extensions, we propose a robust online adaptation algorithm: MEKF with Exponential Moving Average and Dynamic Multi-Epoch strategy (MEKF_EMA-DME). The proposed algorithm outperforms existing methods as demonstrated in experiments.}}
+
+
+@inproceedings{Devonport20,
+	Author={Alex Devonport and Murat Arcak},
+	Title={Estimating Reachable Sets with Scenario  Optimization},
+	Pages={75--84},
+	Abstract={Many practical systems are not amenable to the reachability methods that give
+guarantees of correctness, since they have dynamics that are strongly
+nonlinear, uncertain, and possibly unknown. While reachable sets for these
+kinds of systems can still be estimated in a data-driven way, data-driven methods
+typically do not guarantee the validity of their results.
+
+However, certain data-driven approaches may be given a
+probabilistic guarantee of correctness, by reframing the problem as a
+chance-constrained optimization problem that is solved with scenario
+optimization. We apply this approach to the problem of approximating a
+reachable set by a norm ball from data. The method requires only O(n^2) sample
+trajectories and the solution of a convex problem.
+A variant of the method restricted to axis-aligned norm balls requires
+only O(n) samples.}}
+
+
+@inproceedings{Bonassi20,
+	Author={Fabio Bonassi and Enrico Terzi and Marcello Farina and Riccardo Scattolini},
+	Title={LSTM Neural Networks: Input to State Stability and Probabilistic Safety Verification},
+	Pages={85--94},
+	Abstract={The goal of this paper is to analyze Long Short Term Memory (LSTM) neural networks from a dynamical system perspective. The classical recursive equations describing the evolution of LSTM can be recast in state space form, resulting in a time invariant nonlinear dynamical system. In this work, a sufficient condition guaranteeing the Input-to-State (ISS) stability property of this system are provided. Then, a discussion on the verification of LSTM networks is provided; in particular, a dedicated approach based on the scenario algorithm is devised. The proposed method is eventually tested on a pH neutralization process.}}
+
+
+@inproceedings{Senoz20,
+	Author={Ismail Senoz and Albert Podusenko and Wouter M. Kouw and Bert de Vries},
+	Title={Bayesian joint state and parameter tracking in autoregressive models},
+	Pages={95--104},
+	Abstract={We address the problem of online Bayesian state and parameter tracking in autoregressive (AR) models with time-varying process noise variance. The involved marginalization and expectation integrals cannot be analytically solved. Moreover, the online tracking constraint makes sampling and batch learning methods unsuitable for this problem. We propose a hybrid variational message passing algorithm that robustly tracks the time-varying dynamics of the latent states, AR coefficients and process noise variance. Since message passing in a factor graph is a highly modular inference approach, the proposed methods easily extend to other non-stationary dynamic modeling problems.}}
+
+
+@inproceedings{Kim20,
+	Author={Nam Hee Kim and Zhaoming Xie and Michiel van de Panne},
+	Title={Learning to Correspond Dynamical Systems},
+	Pages={105--117},
+	Abstract={Many dynamical systems exhibit similar structure, as often captured by hand-designed simplified models that can be used for analysis and control. We develop a method for learning to correspond pairs of dynamical systems via a learned latent dynamical system. Given trajectory data from two dynamical systems, we learn a shared latent state space and a shared latent dynamics model, along with an encoder-decoder pair for each of the original systems. With the learned correspondences in place, we can use a simulation of one system to produce an imagined motion of its counterpart. We can also simulate in the learned latent dynamics and synthesize the motions of both corresponding systems, as a form of bisimulation. We demonstrate the approach using pairs of controlled bipedal walkers, as well as by pairing a walker with a controlled pendulum.}}
+
+
+@inproceedings{Menta20,
+	Author={Sandeep Menta and Joseph Warrington and John Lygeros and Manfred Morari},
+	Title={Learning solutions to hybrid control problems using Benders cuts},
+	Pages={118--126},
+	Abstract={Hybrid control problems are complicated by the need to make a suitable sequence of discrete decisions related to future modes of operation of the system. Model predictive control (MPC) encodes a finite-horizon truncation of such problems as a mixed-integer program, and then imposes a cost and/or constraints on the terminal state intended to reflect all post-horizon behaviour. However, these are often ad hoc choices tuned by hand after empirically observing performance. We present a learning method that sidesteps this problem, in which the so-called N-step Q-function of the problem is approximated from below, using Benders’ decomposition. The function takes a state and a sequence of N control decisions as arguments, and therefore extends the traditional notion of a Q-function from reinforcement learning. After learning it from a training process exploring the state-input space, we use it in place of the usual MPC objective. We take an example hybrid control task and show that it can be completed successfully with a shorter planning horizon than conventional hybrid MPC thanks to our proposed method. Furthermore, we report that Q-functions trained with long horizons can be truncated to a shorter horizon for online use, yielding simpler control laws with apparently little loss of performance.}}
+
+
+@inproceedings{Ji20,
+	Author={Xunbi Ji and Sergei Avedisov and Tama Molnar and Gabor Orosz},
+	Title={Feed-forward Neural Network with Trainable Delay and Application to Car-following},
+	Pages={127--136},
+	Abstract={In this paper we build a bridge between feed-forward neural networks and delayed dynamical systems.
+As an initial demonstration, we capture the car-following behavior of a connected automated vehicle including time delay using both simulation data and experimental data. We construct a delayed feed-forward neural network (DFNN) and introduce a training algorithm in order to learn the delay. We demonstrate that this algorithm works well on the proposed structures and can be extended to capture the behavior of other dynamical systems with delay.}}
+
+
+@inproceedings{Bujarbaruah20,
+	Author={Monimoy Bujarbaruah and Charlott Vallon},
+	Title={Exploiting Model Sparsity in Adaptive MPC: A Compressed Sensing Viewpoint},
+	Pages={137--146},
+	Abstract={This paper proposes an Adaptive Stochastic Model Predictive Control (MPC) strategy for stable linear time-invariant systems in the presence of bounded disturbances. We consider multi-input, multi-output systems that can be expressed by a Finite Impulse Response (FIR) model. The parameters of the FIR model corresponding to each output are unknown but assumed sparse. We estimate these parameters using the Recursive Least Squares algorithm. The estimates are then improved using set-based bounds obtained by solving the Basis Pursuit Denoising problem. Our approach is able to handle hard input constraints and probabilistic output constraints. Using tools from distributionally robust optimization, we reformulate the probabilistic output constraints as tractable convex second-order cone constraints, which enables us to pose our MPC design task as a convex optimization problem. The efficacy of the developed algorithm is highlighted with a thorough numerical example, where we demonstrate performance gain over the counterpart algorithm of Bujarbaruah et al. (2018), which does not utilize the sparsity information of the system impulse response parameters during control design.}}
+
+
+@inproceedings{Curi20,
+	Author={Sebastian Curi and Silvan Melchior and Felix Berkenkamp and Andreas Krause},
+	Title={Structured Variational Inference in Partially Observable UnstableGaussian Process State Space Models},
+	Pages={147--157},
+	Abstract={We propose a new variational inference algorithm for learning in Gaussian Process State-Space Models (GPSSMs). Our algorithm enables learning of unstable and partially observable systems, where previous algorithms fail. Our main algorithmic contribution is a novel approximate posterior that can be calculated efficiently using a single forward and backward pass along the training trajectories. The forward-backward pass is inspired on Kalman smoothing for linear dynamical systems but generalizes to GPSSMs. Our second contribution is a modification of the conditioning step that effectively lowers the Kalman gain. This modification is crucial to attaining good test performance where no measurements are available. Finally, we show experimentally that our learning algorithm performs well in stable and unstable real systems with hidden states.}}
+
+
+@inproceedings{Amani20,
+	Author={Sanae Amani and Mahnoosh Alizadeh and Christos Thrampoulidis},
+	Title={Regret Bound for Safe Gaussian Process Bandit Optimization},
+	Pages={158--159},
+	Abstract={Many applications require a learner to make sequential decisions given uncertainty regarding both the system’s payoff function and safety constraints. When learning algorithms are used in safety-critical systems, it is paramount that the learner’s actions do not violate the safety constraints at any stage of the learning process. In this paper, we study a stochastic bandit optimization problem where the system’s unknown payoff and constraint functions are sampled from Gaussian Processes (GPs). We develop a safe variant of the proposed algorithm by Srinivas et al. (2010), GP-UCB, called SGP-UCB, with necessary modifications to respect safety constraints at every round. Our most important contribution is to derive the first sub-linear regret bounds for this problem.}}
+
+
+@inproceedings{Umlauft20,
+	Author={Jonas Umlauft and Thomas Beckers and Alexandre Capone and Armin Lederer and Sandra Hirche},
+	Title={Smart Forgetting for Safe  Online Learning with Gaussian Processes},
+	Pages={160--169},
+	Abstract={The identification of unknown dynamical systems using supervised learning enables model-based control of systems that cannot be modeled based on first principles. While most control literature focuses on the analysis of a static dataset, online learning control, where data points are added while the controller is running, has rarely been studied in depth. In this paper, we present a novel approach for online learning control based on Gaussian process models. To avoid computational difficulties with growing datasets, we propose a safe forgetting mechanism. Using an entropy criterion, data points are evaluated with respect to the future trajectory of the closed loop system and are ``forgotten'' if the stability of the system can further be guaranteed. The approach is evaluated in a simulation and in a robotic experiment to show its real-time capability.}}
+
+
+@inproceedings{Moe20,
+	Author={Signe Moe and Filippo Remonato and Esten Ingar Gr{\o}tli and Jan Tommy Gravdahl},
+	Title={Linear Antisymmetric Recurrent Neural Networks},
+	Pages={170--178},
+	Abstract={Recurrent Neural Networks (RNNs) have a form of memory where the output from a node at one timestep is fed back as input the next timestep in addition to data from the previous layer. This makes them highly suitable for timeseries analysis. However, standard RNNs have known weaknesses such as exploding/vanishing gradient and thereby struggle with a long-term memory. In this paper, we suggest a new recurrent network structure called Linear Antisymmetric RNN (LARNN). This structure is based on the numerical solution to an Ordinary Differential Equation (ODE) with stability properties resulting in a stable solution, which corresponds to long-term memory and trainability. Three different numerical methods are suggested to solve the ODE: Forward and Backward Euler and the midpoint method. The suggested structure has been implemented in Keras and several simulated datasets have been used to evaluate the performance. In the investigated cases, the LARNN performs better or similar to the Long Short Term Memory (LSTM) network which is the current state of the art for RNNs.}}
+
+
+@inproceedings{Zhang20a,
+	Author={Kaiqing Zhang and Bin Hu and Tamer Basar},
+	Title={Policy Optimization for $\mathcal{H}_{2}$ Linear Control with $\mathcal{H}_{\infty}$ Robustness Guarantee: Implicit Regularization and Global Convergence},
+	Pages={179--190},
+	Abstract={Policy optimization (PO) is a key ingredient for modern reinforcement learning (RL). For control design, certain constraints are usually enforced on the policies to optimize, accounting for either the stability, robustness, or safety concerns on the system. Hence, PO is by nature a constrained (nonconvex) optimization in most cases, whose global convergence is challenging to analyze in general. More importantly, some constraints that are safety-critical, e.g., the closed-loop stability, or the $\mathcal{H}_{\infty}$-norm constraint that guarantees the system robustness, can be difficult to enforce on the controller being learned as the PO methods proceed. In this paper, we study the convergence theory of PO for $\mathcal{H}_{2}$ linear control with $\mathcal{H}_{\infty}$ robustness guarantee. This general framework includes risk-sensitive linear control as a special case. One significant new feature of this problem, in contrast to the standard $\mathcal{H}_{2}$ linear control, namely, linear quadratic regulator (LQR) problems, is the lack of coercivity of the cost function. This makes it challenging to guarantee the feasibility, namely, the $\mathcal{H}_{\infty}$ robustness, of the iterates. Interestingly, we propose two PO algorithms that enjoy the implicit regularization property, i.e., the iterates preserve the $\mathcal{H}_{\infty}$ robustness, as if they are regularized by the algorithms. Furthermore, convergence to the globally optimal policies with globally sublinear and locally (super-)linear rates are provided under certain conditions, despite the nonconvexity of the problem. To the best of our knowledge, our work offers the first results on the implicit regularization property and global convergence of PO methods for robust/risk-sensitive control.}}
+
+
+@inproceedings{Gonzalez20,
+	Author={Rodrigo A. Gonz\'alez and Cristian R. Rojas},
+	Title={A Finite-Sample Deviation Bound for Stable Autoregressive Processes},
+	Pages={191--200},
+	Abstract={In this paper, we study non-asymptotic deviation bounds of the least squares estimator in Gaussian AR($n$) processes. By relying on martingale concentration inequalities and a tail-bound for $\chi^2$ distributed variables, we provide a concentration bound for the sample covariance matrix of the process output. With this, we present a problem-dependent finite-time bound on the deviation probability of any fixed linear combination of the estimated parameters of the AR$(n)$ process. We discuss extensions and limitations of our approach. }}
+
+
+@inproceedings{Zhang20b,
+	Author={Xuezhou Zhang and Xiaojin Zhu and Laurent Lessard},
+	Title={Online Data Poisoning Attacks},
+	Pages={201--210},
+	Abstract={We study data poisoning attacks in the online learning setting, where training data arrive sequentially,
+and the attacker is eavesdropping the data stream and has the ability to contaminate the current data point to affect the online learning process.
+We formulate the optimal online attack problem as a stochastic optimal control problem, and provide a systematic solution using tools from model predictive control and deep reinforcement learning.
+We further provide theoretical analysis on the regret suffered by the attacker for not knowing the true data sequence.
+Experiments validate our control approach in generating near-optimal attacks on both supervised and unsupervised learning tasks.}}
+
+
+@inproceedings{Karnchanachari20,
+	Author={Napat Karnchanachari and Miguel de la Iglesia Valls and David Hoeller and Marco Hutter},
+	Title={Practical Reinforcement Learning For MPC: Learning from sparse objectives in under an hour on a real robot},
+	Pages={211--224},
+	Abstract={Model Predictive Control (MPC) is a powerful control technique that handles constraints, takes the system’s dynamics into account, and is optimal with respect to a given cost function. In practice, however, it often requires an expert to craft and tune this cost function and find trade-offs between different state penalties to satisfy simple high level objectives. In this paper, we use Reinforcement Learning and in particular value learning to approximate the value function given only high level objectives, which can be sparse and binary. Building upon previous works, we present improvements that allowed us to successfully deploy the method on a real world unmanned ground vehicle. Our experiments show that our method can learn the cost function from scratch and without human intervention, while reaching a performance level similar to that of an expert-tuned MPC. We perform a quantitative comparison of these methods with standard MPC approaches both in simulation and on the real robot.}}
+
+
+@inproceedings{Geist20,
+	Author={Andreas Geist and Sebastian Trimpe},
+	Title={Learning Constrained Dynamics  with Gauss' Principle adhering Gaussian Processes},
+	Pages={225--234},
+	Abstract={The identification of the constrained dynamics of mechanical systems is often challenging. Learning methods promise to ease an analytical analysis, but require considerable amounts of data for training. We propose to combine insights from analytical mechanics with Gaussian process regression to improve the model's data efficiency and constraint integrity. The result is a Gaussian process model that incorporates a priori constraint knowledge such that its predictions adhere Gauss' principle of least constraint. In return, predictions of the system's acceleration naturally respect potentially non-ideal (non-)holonomic equality constraints. As corollary results, our model enables to infer the acceleration of the unconstrained system from data of the constrained system and enables knowledge transfer between differing constraint configurations.
+}}
+
+
+@inproceedings{Chamon20,
+	Author={Luiz F.O. Chamon and Santiago Paternain and Alejandro Ribeiro},
+	Title={Counterfactual Programming for Optimal Control},
+	Pages={235--244},
+	Abstract={In recent years, considerable work has been done to tackle the issue of designing control laws based on observations to allow unknown dynamical systems to perform pre-specified tasks. At least as important for autonomy, however, is the issue of learning which tasks can be performed in the first place. This is particularly critical in situations where multiple~(possibly conflicting) tasks and requirements are demanded from the agent, resulting in infeasible specifications. Such situations arise due to over-specification or dynamic operating conditions and are only aggravated when the dynamical system model is learned through simulations. Often, these issues are tackled using regularization and penalties tuned based on application-specific expert knowledge. Nevertheless, this solution becomes impractical for large-scale systems, unknown operating conditions, and/or in online settings where expert input would be needed during the system operation. Instead, this work enables agents to autonomously pose, tune, and solve optimal control problems by compromising between performance and specification costs. Leveraging duality theory, it puts forward a counterfactual optimization algorithm that directly determines the specification trade-off while solving the optimal control problem.
+}}
+
+
+@inproceedings{Wang20a,
+	Author={Tianyu Wang and Vikas Dhiman and Nikolay Atanasov},
+	Title={Learning Navigation Costs from Demonstrations with Semantic Observations},
+	Pages={245--255},
+	Abstract={This paper focuses on inverse reinforcement learning (IRL) for autonomous robot navigation using semantic observations. The objective is to infer a cost function that explains demonstrated behavior while relying only on the expert’s observations and state-control trajectory. We develop a map encoder, which infers semantic class probabilities from the observation sequence, and a cost encoder, defined as deep neural network over the semantic features. Since the expert cost is not directly ob-servable, the representation parameters can only be optimized by differentiating the error between demonstrated controls and a control policy computed from the cost estimate. The error is optimized using a closed-form subgradient computed only over a subset of promising states via a motion planning algorithm. We show that our approach learns to follow traffic rules in the autonomous driving CARLA simulator by relying on semantic observations of cars, sidewalks and road lanes.}}
+
+
+@inproceedings{Qu20,
+	Author={Guannan Qu and Adam Wierman and Na Li},
+	Title={Scalable Reinforcement Learning of Localized Policies for Multi-Agent Networked Systems},
+	Pages={256--266},
+	Abstract={We study reinforcement learning (RL) in a setting with a network of agents whose states and actions interact in a local manner where the objective is to find localized policies such that the (discounted) global reward is maximized. A fundamental challenge in this setting is that the state-action space size scales exponentially in the number of agents, rendering the problem intractable for large networks. In this paper, we propose a Scalable Actor Critic (SAC) framework that exploits the network structure and finds a localized policy that is an $O(\rho^\kappa)$-approximation of a stationary point of the objective for some $\rho\in(0,1)$, with complexity that scales with the local state-action space size of the largest $\kappa$-hop neighborhood of the network. }}
+
+
+@inproceedings{Mazzoleni20,
+	Author={Mirko Mazzoleni and Matteo Scandella and Simone Formentin and Fabio Previdi},
+	Title={Black-box continuous-time transfer function estimation with stability guarantees: a kernel-based approach},
+	Pages={267--276},
+	Abstract={Continuous-time parametric models of dynamical systems are usually preferred given their physical interpretation. When there is a lack of prior physical knowledge, the user is faced with the model selection issue. In this paper, we propose a non-parametric approach to estimate a continuous-time stable linear model from data, while automatically selecting a proper structure of the transfer function and guaranteeing to preserve the system stability properties. Results show how the proposed approach outperforms the state of the art.}}
+
+
+@inproceedings{Bharadhwaj20,
+	Author={Homanga Bharadhwaj and Kevin Xie and Florian Shkurti},
+	Title={Model-Predictive Planning via Cross-Entropy and Gradient-Based Optimization},
+	Pages={277--286},
+	Abstract={Recent works in high-dimensional model-predictive control and model-based reinforcement learning with learned dynamics and reward models have resorted to population-based optimization methods, such as the Cross-Entropy Method (CEM), for planning a sequence of actions. To decide on an action to take, CEM conducts a search for the action sequence with the highest return according to the learned dynamics model and reward. Action sequences are typically randomly sampled from an unconditional Gaussian distribution and evaluated. This distribution is iteratively updated towards action sequences with higher returns. However, sampling and simulating unconditional action sequences can be very inefficient (especially from a diagonal Gaussian distribution and for high dimensional action spaces). An alternative line of approaches optimize action sequences directly via gradient descent but are prone to local optima. We propose a method to solve this planning problem by interleaving CEM and gradient descent steps in optimizing the action sequence.}}
+
+
+@inproceedings{Furieri20,
+	Author={Luca Furieri and Yang Zheng and Maryam Kamgarpour},
+	Title={Learning the Globally Optimal Distributed LQ Regulator},
+	Pages={287--297},
+	Abstract={We study model-free learning methods for the output-feedback Linear Quadratic (LQ) control problem in finite-horizon subject to subspace constraints on the control policy. Subspace constraints naturally arise in the field of distributed control and present a significant challenge in the sense that standard model-based optimization and learning leads to intractable numerical programs in general.  Building upon recent results in zeroth-order optimization, we establish model-free sample-complexity bounds for the class of distributed LQ problems where a local gradient dominance constant exists on any sublevel set of the cost function. We prove that a fundamental class of distributed control problems - commonly referred to as Quadratically Invariant (QI) problems - as well as others possess this property. To the best of our knowledge, our result is the first sample-complexity bound guarantee on learning globally optimal distributed output-feedback control policies. }}
+
+
+@inproceedings{KhodayiMehr20,
+	Author={Reza Khodayi-Mehr and Michael Zavlanos},
+	Title={VarNet: Variational Neural Networks for the Solution of Partial Differential Equations},
+	Pages={298--307},
+	Abstract={We propose a new model-based unsupervised learning method, called VarNet, for the solution of partial differential equations (PDEs) using deep neural networks. Particularly, we propose a novel loss function that relies on the variational (integral) form of PDEs as apposed to their differential form which is commonly used in the literature. Our loss function is discretization-free, highly parallelizable, and more effective in capturing the solution of PDEs since it employs lower-order derivatives and trains over measure non-zero regions of space-time. The models obtained using VarNet are smooth and do not require interpolation. They are also easily differentiable and can directly be used for control and optimization of PDEs. Finally, VarNet can straight-forwardly incorporate parametric PDE models making it a natural tool for model order reduction of PDEs.}}
+
+
+@inproceedings{Venkataraman20,
+	Author={Harish Venkataraman and Derya Aksaray and Peter Seiler},
+	Title={Tractable Reinforcement Learning of Signal Temporal Logic Objectives},
+	Pages={308--317},
+	Abstract={Signal temporal logic (STL) is an expressive language to specify time-bound real-world robotic tasks and safety specifications. Recently, there has been an interest in learning optimal policies to satisfy STL specifications via reinforcement learning (RL). Learning to satisfy STL specifications often needs a sufficient length of state history to compute reward and the next action. The need for history results in exponential state-space growth for the learning problem. Thus the learning problem becomes computationally intractable for most real-world applications. In this paper, we propose a compact means to capture state history in a new augmented state-space representation. An approximation to the objective (maximizing probability of satisfaction) is proposed and solved for in the new augmented state-space. We show the performance bound of the approximate solution and compare it with the solution of an existing technique via simulations.}}
+
+
+@inproceedings{Sekhon20,
+	Author={Jasmine Sekhon and Cody Fleming},
+	Title={A Spatially and Temporally Attentive Joint Trajectory Prediction Framework for Modeling Vessel Intent},
+	Pages={318--327},
+	Abstract={Ships, or vessels, often sail in and out of cluttered environments over the course of their trajectories. Safe navigation in such cluttered scenarios requires an accurate estimation of the intent of neighboring vessels and their effect on the self and vice-versa well into the future. In manned vessels, this is achieved by constant communication between people on board, nautical experience, and audio and visual signals. In this paper we propose a deep neural network based architecture to predict intent of neighboring vessels into the future for an unmanned vessel solely based on positional data.}}
+
+
+@inproceedings{Gupta20,
+	Author={Jayesh K. Gupta and Kunal Menda and Zachary Manchester and Mykel Kochenderfer},
+	Title={Structured Mechanical Models for Robot Learning and Control},
+	Pages={328--337},
+	Abstract={Model-based methods are the dominant paradigm for controlling robotic systems, though their efficacy depends heavily on the accuracy of the model used. Deep neural networks have been used to learn models of robot dynamics from data, but they suffer from data-inefficiency and the difficulty to incorporate prior knowledge. We introduce Structured Mechanical Models, a flexible model class for mechanical systems that are data-efficient, easily amenable to prior knowledge, and easily usable with model-based control techniques. The goal of this work is to demonstrate the benefits of using Structured Mechanical Models in lieu of black-box neural networks when modeling robot dynamics. We demonstrate that they generalize better from limited data and yield more reliable model-based controllers on a variety of simulated robotic domains.}}
+
+
+@inproceedings{Sivaranjani20,
+	Author={S Sivaranjani and Etika Agarwal and Vijay Gupta},
+	Title={Data-driven Identification of Approximate Passive Linear Models for Nonlinear Systems},
+	Pages={338--339},
+	Abstract={In model-based approaches to learning for controller design, it is important to first identify a system model from input-output data. Assume that we have access to some information about the true system satisfying a structural property that makes it easy to design a controller and obtain a desired performance or stability guarantee on the closed loop system. Can we identify a system model that satisfies this property? In this paper, we consider the property to be that of passivity, that can be used to ensure stability with a learned controller. We present an algorithm to learn a passive linear model of a unknown passive nonlinear system from time domain input-output data. We first learn an approximate linear model of the nonlinear system using standard regression techniques. We then perturb the system matrices of the linear model to enforce passivity. We show that the perturbation can be chosen to ensure that the linear model closely approximates the dynamical behavior of the nonlinear system. Further, we provide an analytical relationship between the size of the perturbation and the radius in which the passivity of the linear model guarantees local passivity of the unknown nonlinear system. }}
+
+
+@inproceedings{Laracy20,
+	Author={Aidan Laracy and Hamid Ossareh},
+	Title={Constraint Management for Batch Processes Using Iterative Learning Control and Reference Governors},
+	Pages={340--349},
+	Abstract={ This paper provides a novel combination of Reference Governors (RG) and Iterative Learning Control (ILC) to address the issue of simultaneous learning and constraint management in systems that perform a task repeatedly. The proposed control strategy leverages the measured output from the previous iterations to improve tracking, while guaranteeing constraint satisfaction during the learning process. To achieve this, the system is modeled by a linear system with polytopic uncertainties. An RG solution based on a robust Maximal Admissable Set (MAS) is proposed that endows the ILC algorithm with constraint management capabilities. An update law on the MAS is proposed to further improve performance.}}
+
+
+@inproceedings{Dean20,
+	Author={Sarah Dean and Nikolai Matni and Benjamin Recht and Vickie Ye},
+	Title={Robust Guarantees for Perception-Based Control},
+	Pages={350--360},
+	Abstract={Motivated by vision-based control of autonomous vehicles, we consider the problem of controlling a known linear dynamical system for which partial state information, such as vehicle position, is extracted from complex and nonlinear data, such as a camera image.
+Our approach is to use a learned perception map that predicts some linear function of the state and to design a corresponding safe set and robust controller for the closed loop system with this sensing scheme.
+We show that under suitable smoothness assumptions on both the perception map and the generative model relating state to complex and nonlinear data,
+parameters of the safe set can be learned via appropriately dense sampling of the state space.
+We then prove that the resulting perception-control loop has favorable generalization properties.
+We illustrate the usefulness of our approach on a synthetic example and on the self-driving car simulation platform CARLA.}}
+
+
+@inproceedings{Agrawal20,
+	Author={Akshay Agrawal and Shane Barratt and Stephen Boyd and Bartolomeo Stellato},
+	Title={Learning Convex Optimization Control Policies},
+	Pages={361--373},
+	Abstract={Many control policies used in applications compute the input or
+action by solving a convex optimization problem that depends on the current state
+and some parameters. Common examples of such
+convex optimization control policies (COCPs) include the linear quadratic regulator (LQR),
+convex model predictive control (MPC), and convex approximate dynamic
+programming (ADP) policies. These types of control policies are tuned by
+varying the parameters in the optimization problem, such as the LQR weights, to
+obtain good performance, judged by application-specific metrics. Tuning is
+often done by hand, or by simple methods such as a grid search. In this paper
+we propose a method to automate this process, by adjusting the parameters using
+an approximate gradient of the performance metric with respect to the
+parameters. Our method relies on recently developed methods that can
+efficiently evaluate the derivative of the solution of a convex program with
+respect to its parameters. A longer version of this paper, which illustrates
+our method on many examples, is available at
+https://web.stanford.edu/~boyd/papers/learning_cocps.html.}}
+
+
+@inproceedings{Palan20,
+	Author={Malayandi Palan and Shane Barratt and Alex McCauley and Dorsa Sadigh and Vikas Sindhwani and Stephen Boyd},
+	Title={Fitting a Linear Control Policy to Demonstrations with a Kalman Constraint},
+	Pages={374--383},
+	Abstract={We consider the problem of learning a linear control policy for a linear
+dynamical system, from demonstrations of an expert regulating the
+system. The standard approach to this problem is (linear) policy
+fitting, which fits a linear policy by minimizing a loss function
+between the demonstrations and the policy's outputs plus a
+regularization function that encodes prior knowledge. Despite its
+simplicity, this method fails to learn policies with low or even finite
+cost when there are few demonstrations. We propose to add an additional
+constraint to the regularization function in policy fitting, that the
+policy is the solution to some LQR problem, i.e., optimal in the
+stochastic control sense for some choice of quadratic cost. We refer to
+this constraint as a Kalman constraint. Policy fitting with a Kalman
+constraint requires solving an optimization problem with convex cost and
+bilinear constraints. We propose a heuristic method, based on the
+alternating direction method of multipliers (ADMM), to approximately
+solve this problem. An illustrative numerical experiment demonstrates
+that adding the Kalman constraint allows us to learn good, i.e., low
+cost, policies even when very few data are available.}}
+
+
+@inproceedings{Hanson20,
+	Author={Joshua Hanson and Maxim Raginsky},
+	Title={Universal Simulation of Dynamical Systems by Recurrent Neural Nets},
+	Pages={384--392},
+	Abstract={It is well-known that continuous-time recurrent neural nets are universal approximators for continuous-time dynamical systems. However, existing results provide approximation guarantees only for finite-time trajectories. In this work, we show that infinite-time trajectories generated by dynamical systems that are stable in a certain sense can be reproduced arbitrarily accurately by recurrent neural nets. For a subclass of these stable systems, we provide quantitative estimates on the sufficient number of neurons needed to achieve a specified error tolerance.
+}}
+
+
+@inproceedings{Revay20,
+	Author={Max Revay and Ian Manchester},
+	Title={Contracting Implicit Recurrent Neural Networks: Stable Models with Improved Trainability},
+	Pages={393--403},
+	Abstract={Stability of recurrent models is closely linked with trainability, generalizability and in some applications,safety. Methods that train stable recurrent neural networks, however, do so at a significant cost to expressibility. We propose an implicit model structure that allows for a convex parametrization of stable models using contraction analysis of non-linear systems. Using these stability conditions
+we propose a new approach to model initialization and then provide a number of empirical results comparing the performance of our proposed model set to previous stable RNNs and vanilla RNNs. By carefully controlling stability in the model, we observe a significant increase in the speed of training and model performance.}}
+
+
+@inproceedings{Anguluri20,
+	Author={Rajasekhar Anguluri and Abed Alrahman Al Makdah and Vaibhav Katewa and Fabio Pasqualetti},
+	Title={On the Robustness of Data-Driven Controllers for Linear Systems},
+	Pages={404--412},
+	Abstract={This paper proposes a new framework and several results to quantify the performance of data-driven state-feedback controllers for linear systems against targeted perturbations of the training data. We focus on the case where subsets of the training data are randomly corrupted by an adversary, and derive lower and upper bounds for the stability of the closed-loop system with compromised controller as a function of the perturbation statistics, size of the training data, sensitivity of the data-driven algorithm to perturbation of the training data, and properties of the nominal closed-loop system. Our stability and convergence bounds are probabilistic in nature, and rely on a first-order approximation of the data-driven procedure that designs the state-feedback controller, which can be computed directly using the training data. We illustrate our findings via multiple numerical studies.}}
+
+
+@inproceedings{BasSerrano20,
+	Author={Joan Bas Serrano and Gergely Neu},
+	Title={Faster saddle-point  optimization for solving large-scale Markov decision processes},
+	Pages={413--423},
+	Abstract={We consider the problem of computing optimal policies in average-reward Markov decision processes. This classical problem can be formulated as a linear program directly amenable to saddle-point optimization methods, albeit with a number of variables that is linear in the number of states. To address this issue, recent work has considered a linearly relaxed version of the resulting saddle-point problem. Our work aims at achieving a better understanding of this relaxed optimization problem by characterizing the conditions necessary for convergence to the optimal policy, and designing an optimization algorithm enjoying fast convergence rates that are independent of the size of the state space. Notably, our characterization points out some potential
+issues with previous work.}}
+
+
+@inproceedings{Hewing20,
+	Author={Lukas Hewing and Elena Arcari and Lukas P. Fr\"ohlich and Melanie N. Zeilinger},
+	Title={On Simulation and Trajectory Prediction with Gaussian Process Dynamics},
+	Pages={424--434},
+	Abstract={Established techniques for simulation and prediction with Gaussian process (GP) dynamics implicitly make use of an independence assumption on successive function evaluations of the dynamics model. This can result in significant error and underestimation of the prediction uncertainty, potentially leading to failures in safety-critical applications. This paper proposes methods that explicitly take the correlation of successive function evaluations into account. We first describe two sampling-based techniques; one approach provides samples of the true trajectory distribution, suitable for `ground truth' simulations, while the other draws function samples from basis function approximations of the GP. Second, we present a linearization-based technique that directly provides approximations of the trajectory distribution, taking correlations explicitly into account. We demonstrate the procedures in simple numerical examples, contrasting the results with established
+methods.}}
+
+
+@inproceedings{Tsiamis20,
+	Author={Anastasios Tsiamis and Nikolai Matni and George Pappas},
+	Title={Sample Complexity of Kalman Filtering for Unknown Systems},
+	Pages={435--444},
+	Abstract={In this paper, we consider the task of designing a Kalman Filter (KF) for an unknown and partially observed autonomous linear time invariant system driven by process and sensor noise.  To do so, we propose studying the following two step process: first, using system identification tools rooted in subspace methods, we obtain coarse finite-data estimates of the state-space parameters, and Kalman gain describing the autonomous system; and second, we use these approximate parameters to design a filter which produces estimates of the system state.  We show that when the system identification step produces sufficiently accurate estimates, or when the underlying true KF is sufficiently robust, that a Certainty Equivalent (CE) KF, i.e., one designed using the estimated parameters directly, enjoys provable sub-optimality guarantees.  We further show that when these conditions fail, and in particular, when the CE KF is marginally stable (i.e., has eigenvalues very close to the unit circle), that imposing additional robustness constraints on the filter leads to similar sub-optimality guarantees.  We further show that with high probability, both the CE and robust filters have mean prediction error bounded by the order of inverse square root of N, where N is the number of data points collected in the system identification step.  To the best of our knowledge, these are the first end-to-end sample complexity bounds for the Kalman Filtering of an unknown system.  }}
+
+
+@inproceedings{Jain20,
+	Author={Achin Jain and Francesco Smarra and Enrico Reticcioli and Alessandro D'Innocenzo and Manfred Morari},
+	Title={NeurOpt: Neural network based optimization for building energy management and climate control},
+	Pages={445--454},
+	Abstract={Model predictive control (MPC) can provide significant energy cost savings in building operations in the form of energy-efficient control with better occupant comfort, lower peak demand charges, and risk-free participation in demand response. However, the engineering effort required to obtain physics-based models of buildings for MPC is considered to be the biggest bottleneck in making MPC scalable to real buildings. In this paper, we propose a data-driven control algorithm based on neural networks to reduce this cost of model identification. Our approach does not require building domain expertise or retrofitting of the existing heating and cooling systems. We validate our learning and control algorithms on a two-story building with 10 independently controlled zones, located in Italy. We learn dynamical models of energy consumption and zone temperatures with high accuracy and demonstrate energy savings and better occupant comfort compared to the default system controller.}}
+
+
+@inproceedings{Wabersich20,
+	Author={Kim Peter Wabersich and Melanie Zeilinger},
+	Title={Bayesian model predictive control: Efficient model exploration and regret bounds using posterior sampling},
+	Pages={455--464},
+	Abstract={Tight performance specifications in combination with operational constraints make model predictive control (MPC) the method of choice in various industries. As the performance of an MPC controller depends on a sufficiently accurate objective and prediction model of the process, a significant effort in the MPC design procedure is dedicated to modeling and identification. Driven by the increasing amount of available system data and advances in the field of machine learning, data-driven MPC techniques have been developed to facilitate the MPC controller design. While these methods are able to leverage available data, they typically do not provide principled mechanisms to automatically trade off exploitation of available data and exploration to improve and update the objective and prediction model. To this end, we present a learning-based MPC formulation using posterior sampling techniques, which provides finite-time regret bounds on the learning performance while being simple to implement using off-the-shelf MPC software and algorithms. The performance analysis of the method is based on posterior sampling theory and its practical efficiency is illustrated using a numerical example of a highly nonlinear dynamical car-trailer system.}}
+
+
+@inproceedings{Lederer20,
+	Author={Armin Lederer and Alexandre Capone and Sandra Hirche},
+	Title={Parameter Optimization for Learning-based Control of Control-Affine Systems},
+	Pages={465--475},
+	Abstract={Supervised machine learning is often applied to identify system dynamics where first principle methods fail. When combining learning with control methods, probabilistic regression is typically applied to increase robustness against learning errors and analyze the stability of the closed-loop system. Although this approach allows to formulate performance guarantees for many control techniques, the obtained bounds are usually conservative, and cannot be employed for efficient control parameter tuning. Therefore, we reformulate the parameter tuning problem using robust optimization with performance constraints based on Lyapunov theory. By relaxing the problem through scenario optimization we derive a provably optimal method for control parameter tuning. We demonstrate its flexibility and efficiency on parameter tuning problems for a feedback linearizing and a computed torque controller.}}
+
+
+@inproceedings{Akbari20,
+	Author={Mohammad Akbari and Bahman Gharesifard and Tamas Linder},
+	Title={Riccati updates for online linear quadratic control},
+	Pages={476--485},
+	Abstract={We study an online setting of the linear quadratic Gaussian optimal control problem on a sequence of cost functions, where similar to classical online optimization, the future decisions are made by only knowing the cost in hindsight. We introduce a modified online Riccati update that under some boundedness assumptions, leads to logarithmic regret bounds, improving the best known square-root bound. In particular, for the scalar case we achieve the logarithmic regret without any boundedness assumption. As opposed to earlier work, proposed method does not rely on solving semi-definite programs at each stage.}}
+
+
+@inproceedings{Yang20a,
+	Author={Zhuoran Yang and Yuchen Xie and Zhaoran Wang},
+	Title={A Theoretical Analysis of Deep Q-Learning},
+	Pages={486--489},
+	Abstract={Despite the great empirical success of deep reinforcement learning, its theoretical foundation is less well understood. In this work, we make the first attempt to theoretically understand the deep Q-network (DQN) algorithm (Mnih et al., 2015) from both algorithmic and statistical perspectives. In specific, we focus on the fitted Q iteration (FQI) algorithm with deep neural networks, which is a slight simplification of DQN that captures the tricks of experience replay and target network used in DQN. Under mild assumptions, we establish the algorithmic and statistical rates of convergence for the action-value functions of the iterative policy sequence obtained by FQI. In particular, the statistical error characterizes the bias and variance that arise from approximating the action-value function using deep neural network, while the algorithmic error converges to zero at a geometric rate. As a byproduct, our analysis provides justifications for the techniques of experience replay and target network, which are crucial to the empirical success of DQN. Furthermore, as a simple extension of DQN, we propose the Minimax-DQN algorithm for zero-sum Markov game with two players, which is deferred to the appendix due to space limitations.}}
+
+
+@inproceedings{Capone20,
+	Author={Alexandre Capone and Gerrit Noske and Jonas Umlauft and Thomas Beckers and Armin Lederer and Sandra Hirche},
+	Title={Localized active learning of Gaussian process state space models},
+	Pages={490--499},
+	Abstract={In learning based methods for dynamical systems, exploration plays a crucial
+role, as accurate models of the dynamics need to be learned. Most
+of the tools developed so far focus on a proper exploration-exploitation
+trade-off to solve the given task, or actively strive for unknown areas of the
+task space. However, in the latter case, the
+exploration is performed greedily, and fails to capture the effect that
+learning in the near future will have on model uncertainty  in the distant future,
+effectively steering the system towards exploratory trajectories that yield
+little information. In this paper, we provide an information theory-based
+model predictive control method that anticipates the learning effect when exploring
+dynamical systems, and steers the system towards the most informative points. We
+employ a Gaussian process to model the system dynamics, which enables us to
+quantify the model uncertainty and estimate future information gains. We include a numerical example illustrates that illustrates the effectiveness of the proposed approach.}}
+
+
+@inproceedings{Li20a,
+	Author={Anjian Li and Somil Bansal and Georgios Giovanis and Varun Tolani and Claire Tomlin and Mo Chen},
+	Title={Generating Robust Supervision for Learning-Based Visual Navigation Using Hamilton-Jacobi Reachability},
+	Pages={500--510},
+	Abstract={In Bansal et al. (2019), a novel visual navigation framework that combines learning-based and model-based approaches has been proposed. Specifically, a Convolutional Neural Network (CNN) predicts a waypoint that is used by the dynamics model for planning and tracking a trajectory to the waypoint. However, the CNN inevitably makes prediction errors, ultimately leading to collisions, especially when the robot is navigating through cluttered and tight spaces. In this paper, we present a novel Hamilton-Jacobi (HJ) reachability-based method to generate supervision for the CNN for waypoint prediction. By modeling the prediction error of the CNN as disturbances in dynamics, the proposed method generates waypoints that are robust to these disturbances, and consequently to the prediction errors. Moreover, using globally optimal HJ reachability analysis leads to predicting waypoints that are time-efficient and do not exhibit greedy behavior. Through simulations and experiments on a hardware testbed, we demonstrate the advantages of the proposed approach for navigation tasks where the robot needs to navigate through cluttered, narrow indoor environments.}}
+
+
+@inproceedings{Matschek20,
+	Author={Janine Matschek and Rolf Findeisen},
+	Title={Learning supported Model Predictive Control for Tracking of Periodic References},
+	Pages={511--520},
+	Abstract={Increased autonomy of controllers in tasks with uncertainties stemming from the interaction with the environment can be achieved by incorporation of learning. Examples are control tasks where the system should follow a reference which depends on measurement data from surrounding systems as e.g. humans or other control systems. We propose a learning strategy for Gaussian processes to model, filter and predict references for control systems under model predictive control.
+Hereby constraints in the learning are included to achieve safety guarantees as trackability and recursive feasibility. An illustrative simulation example for motion compensation is given which shows performance improvements of combined constrained learning and predictive control besides the provided guarantees.}}
+
+
+@inproceedings{Coppens20,
+	Author={Peter Coppens and Mathijs Schuurmans and Panagiotis Patrinos},
+	Title={Data-driven distributionally robust LQR with multiplicative noise},
+	Pages={521--530},
+	Abstract={We present a data-driven method for solving the linear quadratic regulator problem for systems with multiplicative disturbances, the distribution of which is only known through sample estimates. We adopt a distributionally robust approach to cast the controller synthesis problem as semidefinite programs.  Using results from high dimensional statistics, the proposed methodology ensures that their solution provides mean-square stabilizing controllers with high probability even for low sample sizes.  As sample size increases the closed-loop cost approaches that of the optimal controller produced when the distribution is known. We demonstrate the practical applicability and performance of the method through a numerical experiment.}}
+
+
+@inproceedings{Mohammadi20,
+	Author={Hesameddin Mohammadi and Mihailo R. Jovanovic' and Mahdi Soltanolkotabi},
+	Title={Learning the model-free linear quadratic regulator via random search},
+	Pages={531--539},
+	Abstract={Model-free reinforcement learning attempts to find an optimal control action for an unknown dynamical system by directly searching over the parameter space of controllers. The convergence behavior and statistical properties of these approaches are often poorly understood because of the nonconvex nature of the underlying optimization problems as well as the lack of exact gradient computation. In this paper, we examine the standard infinite-horizon linear quadratic regulator problem for continuous-time systems with unknown state-space parameters. We provide theoretical bounds on the convergence rate and sample complexity of a random search method. Our results demonstrate that the required simulation time for achieving $\epsilon$-accuracy in a model-free setup and the total number of function evaluations are both of $O (\log \, (1/\epsilon) )$.}}
+
+
+@inproceedings{Li20c,
+	Author={Yuchao Li and Karl Henrik Johansson and Jonas M{\aa}rtensson},
+	Title={Lambda-Policy Iteration with Randomization for Contractive Models with Infinite Policies: Well-Posedness and Convergence},
+	Pages={540--549},
+	Abstract={Abstract dynamic programming models are used to analyze
+$\lambda$-policy iteration with randomization algorithms. Particularly, contractive models with infinite policies are considered and it is shown that well-posedness of the $\lambda$-operator plays a central role in the algorithm. The operator is known to be well-posed for problems with finite states, but our analysis shows that it is also well-defined for the contractive models with infinite states studied. Similarly, the algorithm we analyze is known to converge for problems with finite policies, but we identify the conditions required to guarantee convergence with probability one when the policy space is infinite regardless of the number of states. Guided by the analysis, we exemplify a data-driven approximated implementation of the algorithm for estimation of optimal costs of constrained linear and nonlinear control problems. Numerical results indicate potentials of this method in practice. }}
+
+
+@inproceedings{Umenberger20,
+	Author={Jack Umenberger and Thomas B Schon},
+	Title={Optimistic robust linear quadratic dual control},
+	Pages={550--560},
+	Abstract={Recent work by Mania et al. has proved that certainty equivalent control achieves optimal regret for linear systems and quadratic costs.
+However, when parameter uncertainty is large, certainty equivalence cannot be relied upon to stabilize the true, unknown system.
+In this paper, we present a dual control strategy that attempts to combine the performance of certainty equivalence, with the practical utility of robustness.
+The formulation preserves structure in the representation of parametric uncertainty, which allows the controller to target reduction of uncertainty in the parameters that `matter most' for the control task, while robustly stabilizing the uncertain system.
+Control synthesis proceeds via convex optimization, and the method is illustrated on a numerical example.}}
+
+
+@inproceedings{Wu20,
+	Author={Manxi Wu and Saurabh Amin and Asuman Ozdaglar},
+	Title={Bayesian Learning with Adaptive Load Allocation Strategies},
+	Pages={561--570},
+	Abstract={We study a Bayesian learning dynamics induced by agents who repeatedly allocate loads on a set of resources based on their belief of an unknown parameter that affects the cost distributions of resources. In each step, belief update is performed according to Bayes' rule using the agents' current load and a realization of costs on resources that they utilized. Then, agents choose a new load using an adaptive strategy update rule that accounts for their preferred allocation based on the updated belief. We prove that beliefs and loads generated by this learning dynamics converge almost surely. The convergent belief accurately estimates cost distributions of resources that are utilized by the convergent load. We establish conditions on the initial load and strategy updates under which the cost estimation is accurate on all resources. These results apply to Bayesian learning in congestion games with unknown latency functions. Particularly, we provide conditions under which the load converges to an equilibrium or socially optimal load with complete information of cost parameter. We also design an adaptive tolling mechanism that eventually induces the socially optimal outcome. }}
+
+
+@inproceedings{Bonzanini20,
+	Author={Angelo Domenico Bonzanini and Ali Mesbah},
+	Title={Learning-based Stochastic Model Predictive Control with State-Dependent Uncertainty},
+	Pages={571--580},
+	Abstract={The increasing complexity of modern systems can introduce significant uncertainties to the models that describe them, which poses a great challenge to safe model-based control. This paper presents a learning-based stochastic model predictive control (LB-SMPC) strategy with chance constraints for offset-free trajectory tracking. The LB-SMPC strategy systematically handles plant-model mismatch between the actual system dynamics and a system model via a state-dependent uncertainty term that is intended to correct model predictions at each sampling time. A chance constraint handling method is presented to ensure state constraint satisfaction to a desired level for the case of state-dependent model uncertainty. Closed-loop simulations demonstrate the usefulness of LB- SMPC for predictive control of safety-critical systems with hard-to-model and/or time-varying dynamics.}}
+
+
+@inproceedings{Shah20,
+	Author={Devavrat Shah and Qiaomin Xie and Zhi Xu},
+	Title={Stable Reinforcement Learning with Unbounded State Space},
+	Pages={581--581},
+	Abstract={We consider the problem of reinforcement learning (RL) with unbounded state space motivated by the classical problem of scheduling in a queueing network. We argue that a reasonable RL policy for such settings must be based on online training, since any policy based only on finite samples cannot perform well in the entire unbounded state space. We introduce such an online RL policy using Sparse-Sampling-based Monte Carlo Oracle. To analyze this policy, we propose an appropriate notion of desirable performance in terms of stability: the state dynamics under the policy should remain in a bounded region with high probability. We show that if the system dynamics under optimal policy respects a Lyapunov function, then our policy is stable. Our policy does not need to know the Lyapunov function. Moreover, the assumption of existence Lyapunov function is not restrictive as this assumption is equivalent to the positive recurrence or stability property of any Markov chain, i.e., if there is any policy that can stabilize the system then it must posses a Lyapunov function.}}
+
+
+@inproceedings{Lee20,
+	Author={Donghwan Lee and Niao He},
+	Title={Periodic Q-Learning},
+	Pages={582--598},
+	Abstract={The use of target networks is a common practice in deep reinforcement learning for stabilizing the training; however, theoretical understanding of this technique is still limited. In this paper, we study the so-called periodic Q-learning algorithm (PQ-learning for short), which resembles the technique used in deep Q-learning for solving infinite-horizon discounted Markov decision processes (DMDP) in the tabular setting. PQ-learning maintains two separate Q-value estimates – the online estimate and target estimate. The online estimate follows the standard Q-learning update, while the target estimate is updated periodically. In contrast to the standard Q-learning,
+PQ-learning enjoys a simple finite time analysis and achieves better sample complexity for finding an epsilon-optimal policy. Our result provides a preliminary justification of the effectiveness of utilizing target estimates or networks in Q-learning algorithms.}}
+
+
+@inproceedings{Gravell20,
+	Author={Benjamin Gravell and Tyler Summers},
+	Title={Robust Learning-Based Control via Bootstrapped Multiplicative Noise},
+	Pages={599--607},
+	Abstract={Despite decades of research and recent progress in adaptive control and reinforcement learning, there remains a fundamental lack of understanding in designing controllers that provide robustness to inherent non-asymptotic uncertainties arising from models estimated with finite, noisy data. We propose a robust adaptive control algorithm that explicitly incorporates such non-asymptotic uncertainties into the control design. The algorithm has three components: (1) a least-squares nominal model estimator; (2) a bootstrap resampling method that quantifies non-asymptotic variance of the nominal model estimate; and (3) a non-conventional robust control design method using an optimal linear quadratic regulator (LQR) with multiplicative noise. A key advantage of the proposed approach is that the system identification and robust control design procedures both use stochastic uncertainty representations, so that the actual inherent statistical estimation uncertainty directly aligns with the uncertainty the robust controller is being designed against.
+We show through numerical experiments that the proposed robust adaptive controller can significantly outperform the certainty equivalent controller on both expected regret and measures of regret risk.}}
+
+
+@inproceedings{Liu20,
+	Author={Anqi Liu and Guanya Shi and Soon-Jo Chung and Anima Anandkumar and Yisong Yue},
+	Title={Robust Regression for Safe Exploration in Control},
+	Pages={608--619},
+	Abstract={We study the problem of safe learning and exploration in sequential control problems. The goal is to safely collect data samples from operating in an environment, in order to learn to achieve a challenging control goal (e.g., an agile maneuver close to a boundary).  A central challenge in this setting is how to quantify uncertainty in order to choose provably-safe actions that allow us to collect informative data and reduce uncertainty, thereby achieving both improved controller safety and optimality. To address this challenge, we present a deep robust regression model that is trained to directly predict the uncertainty bounds for safe exploration. We derive generalization bounds for learning and connect them with safety and stability bounds in control. We demonstrate empirically that our robust regression approach can outperform the conventional Gaussian process (GP) based safe exploration in settings where it is difficult to specify a good GP prior.}}
+
+
+@inproceedings{Zheng20,
+	Author={Liyuan Zheng and Lillian Ratliff},
+	Title={Constrained Upper Confidence Reinforcement Learning},
+	Pages={620--629},
+	Abstract={Constrained Markov Decision Processes are a class of stochastic decision problems in which the decision maker must select a policy that satisfies auxiliary cost constraints. This paper extends upper confidence reinforcement learning for settings in which the reward function and the  constraints, described by cost functions, are unknown a priori but the transition kernel is known. Such a setting is well-motivated by a number of applications including exploration of unknown, potentially unsafe, environments. We present an algorithm C-UCRL and show that it achieves sub-linear regret with respect to the reward while satisfying the constraints even while learning with high probability. An illustrative example is provided.}}
+
+
+@inproceedings{Rana20,
+	Author={Muhammad Asif Rana and Anqi Li and Dieter Fox and Byron Boots and Fabio Ramos and Nathan Ratliff},
+	Title={Euclideanizing Flows: Diffeomorphic Reduction for Learning Stable Dynamical Systems},
+	Pages={630--639},
+	Abstract={Execution of complex tasks in robotics requires motions that have complex geometric structure. We present an approach which allows robots to learn such motions from a few human demonstrations. The motions are encoded as rollouts of a dynamical system on a Riemannian manifold. Additional structure is imposed which guarantees smooth convergent motions to a goal location. The aforementioned structure involves viewing motions on an observed Riemannian manifold as deformations of straight lines on a latent Euclidean space. The observed and latent spaces are related through a diffeomorphism. Thus, this paper presents an approach for learning flexible diffeomorphisms, resulting in a stable dynamical system.  The efficacy of this approach is demonstrated through validation on an established benchmark as well demonstrations collected on a real-world robotic system.}}
+
+
+@inproceedings{Bosch20,
+	Author={Nathanael Bosch and Jan Achterhold and Laura Leal-Taix\'e and J\"org St\"uckler},
+	Title={Planning from Images with Deep Latent Gaussian Process Dynamics},
+	Pages={640--650},
+	Abstract={Planning is a powerful approach to control problems with known environment dynamics. In unknown environments the agent needs to learn a model of the system dynamics to make planning applicable. This is particularly challenging when the underlying states are only indirectly observable through high-dimensional observations such as images. We propose to learn a deep latent Gaussian process dynamics (DLGPD) model that learns low-dimensional system dynamics from environment interactions with visual observations. The method infers latent state representations from observations using neural networks and models the system dynamics in the learned latent space with Gaussian processes. All parts of the model can be trained jointly by optimizing a lower bound on the likelihood of transitions in image space. We evaluate the proposed approach on the pendulum swing-up task while using the learned dynamics model for planning in latent space in order to solve the control problem. We also demonstrate that our method can quickly adapt a trained agent to changes in the system dynamics from just a few rollouts. We compare our approach to a state-of-the-art purely deep learning based method and demonstrate the advantages of combining Gaussian processes with deep learning for data efficiency and transfer learning.}}
+
+
+@inproceedings{Wang20b,
+	Author={Kun Wang and Mridul Aanjaneya and Kostas Bekris},
+	Title={A First Principles Approach for Data-Efficient System Identification of Spring-Rod Systems via Differentiable Physics Engines},
+	Pages={651--665},
+	Abstract={We propose a novel differentiable physics engine for system identification of complex spring-rod assemblies. Unlike black-box  data-driven methods for learning the evolution of a dynamical system and its parameters, we modularize the design of our engine using a discrete form of the governing equations of motion, similar to a traditional physics engine. We further reduce the dimension from 3D to 1D for each module, which allows efficient learning of system parameters using linear regression. As a side benefit, the regression parameters correspond to physical quantities, such as spring stiffness or the mass of the rod, making the pipeline explainable. The approach significantly reduces the amount of training data required, and also avoids iterative identification of data sampling and model training. We compare the performance of the proposed engine with previous solutions, and demonstrate its efficacy on tensegrity systems, such as NASA's icosahedron.}}
+
+
+@inproceedings{Jia20,
+	Author={Zeyu Jia and Lin Yang and Csaba Szepesvari and Mengdi Wang},
+	Title={Model-Based Reinforcement Learning with Value-Targeted Regression},
+	Pages={666--686},
+	Abstract={Reinforcement learning (RL) applies to control problems with large state and action spaces, hence it is natural to consider RL with a parametric model. In this paper we focus on finite-horizon episodic RL where the transition model admits the linear parametrization: $P = \sum_{i=1}^{d} (\theta)_{i}P_{i}$. This parametrization provides a universal function approximation and capture several useful models and applications. We propose an upper confidence model-based RL algorithm with value-targeted model parameter estimation. The algorithm updates the estimate of $\theta$ by recursively solving a regression problem using the latest value estimate as the target. We demonstrate the efficiency of our algorithm by proving its expected regret bound $\tilde{\mathcal{O}}(d\sqrt{H^{3}T})$, where $H, T, d$ are the horizon, total number of steps and dimension of $\theta$. This regret bound is independent of the total number of states or actions, and is close to a lower bound $\Omega(\sqrt{HdT})$.}}
+
+
+@inproceedings{Han20,
+	Author={Soojean Han},
+	Title={Localized Learning of Robust Controllers for Networked Systems with Dynamic Topology},
+	Pages={687--696},
+	Abstract={Our previous work proposed an approach to localized adaptive and robust control over a large-scale network of systems subject to a single topological modification. In this paper, we develop this approach into an iterative scheme to handle multiple topological modifications over time, which switch between configurations in a finite-state Markov chain. Each system in the network uses its local information to robustly control its own state while also learning the current state of the network topology (i.e. which state of the Markov chain it is currently in). Additionally, each system maintains an estimate of certain parameters for the overall network, for instance, the transition probabilities of the Markov chain, and each system uses standard average consensus methods to update its estimate. We simulate a simple centered hexagon network with 7 systems and 4 different topological states, and show that each system in the network manages to stabilize under a control law that uses only local information, and adapts to the current topology within a reasonable amount of time after a switch is made.}}
+
+
+@inproceedings{Goyal20,
+	Author={Manish Goyal and Parasara Sridhar Duggirala},
+	Title={NeuralExplorer: State Space Exploration of Closed Loop Control Systems Using Neural Networks},
+	Pages={697--697},
+	Abstract={In this paper, we propose a framework for performing state space exploration of closed loop control systems. For closed loop control systems, we introduce the notion of inverse sensitivity function and present a mechanism for approximating inverse sensitivity by a neural network. This neural network can be used for generating trajectories that reach a destination (or a neighborhood around it). We demonstrate the effectiveness of our approach by applying it to standard nonlinear dynamical systems, nonlinear hybrid systems, and also neural network based feedback control systems.}}
+
+
+@inproceedings{Boyer20,
+	Author={Mark Boyer},
+	Title={Toward fusion plasma scenario planning for NSTX-U using machine-learning-accelerated models},
+	Pages={698--707},
+	Abstract={One of the most promising devices for realizing power production through nuclear fusion is the tokamak. To maximize performance, it is preferable that tokamak reactors achieve advanced operating scenarios characterized by good plasma confinement, improved magnetohydrodynamic stability, and a largely non-inductively driven plasma current. Such scenarios could enable steady-state reactor operation with high fusion gain --- the ratio of produced fusion power to the external power provided through the plasma boundary. Precise and robust control of the evolution of the plasma boundary shape as well as the spatial distribution of the plasma current, density, temperature, and rotation will be essential to achieving and maintaining such scenarios. The complexity of the evolution of tokamak plasmas, arising due to nonlinearities and coupling between various parameters, motivates the use of model-based control algorithms that can account for the system dynamics. In this work, a learning-based accelerated model trained on data from the National Spherical Torus Experiment Upgrade (NSTX-U) is employed to develop planning and control strategies for regulating the density and temperature profile evolution around desired trajectories. The proposed model combines empirical scaling laws developed across multiple devices with neural networks trained on empirical data from NSTX-U and a database of first-principles-based computationally intensive simulations. The reduced execution time of the accelerated model will enable practical application of optimization algorithms and reinforcement learning approaches for scenario planning and control development. An initial demonstration of applying optimization approaches to the learning-based model is presented, including a strategy for mitigating the effect of leaving the finite validity range of the accelerated model. The approach shows promise for actuator planning between experiments and in real-time.}}
+
+
+@inproceedings{Taylor20,
+	Author={Andrew Taylor and Andrew Singletary and Yisong Yue and Aaron Ames},
+	Title={Learning for Safety-Critical Control with Control Barrier Functions},
+	Pages={708--717},
+	Abstract={Modern nonlinear control theory seeks to endow systems with properties of stability and safety, and have been deployed successfully in multiple domains. Despite this success, model uncertainty remains a significant challenge in synthesizing safe controllers, leading to degradation in the properties provided by the controllers. This paper develops a machine learning framework utilizing Control Barrier Functions (CBFs) to reduce model uncertainty as it impact the safe behavior of a system. This approach iteratively collects data and updates a controller, ultimately achieving safe behavior. We validate this method in simulation and experimentally on a Segway platform.}}
+
+
+@inproceedings{Ahmadi20,
+	Author={Amir Ali Ahmadi and Bachir El Khadir},
+	Title={Learning Dynamical Systems with Side Information},
+	Pages={718--727},
+	Abstract={  We present a mathematical formalism and a computational
+  framework for the problem of learning a dynamical system
+  from noisy observations of a few trajectories and subject
+  to side information (e.g., physical laws or
+  contextual knowledge). We identify six classes of side
+  information which can be imposed by semidefinite
+  programming and that arise naturally in many
+  applications. We demonstrate their value on two examples
+  from epidemiology and physics.  Some density results on
+  polynomial dynamical systems that either exactly or
+  approximately satisfy side information are also presented.
+}}
+
+
+@inproceedings{Pereira20,
+	Author={Marcus Pereira and Ziyi Wang and Tianrong Chen and Emily Reed and Evangelos Theodorou},
+	Title={Feynman-Kac Neural Network Architectures for Stochastic Control Using Second-Order FBSDE Theory},
+	Pages={728--738},
+	Abstract={We present a deep recurrent neural network architecture to solve a class of stochastic optimal control problems described by fully nonlinear Hamilton Jacobi Bellman partial differential equations. Such PDEs arise when considering stochastic dynamics characterized by uncertainties that are additive, state dependent, and control multiplicative. Stochastic models with these characteristics are important in computational neuroscience, biology, finance, and aerospace systems and provide a more accurate representation of actuation than models with only additive uncertainty. Previous literature has established the inadequacy of the linear HJB theory for such problems, so instead, methods relying on the generalized version of the Feynman-Kac lemma have been proposed resulting in a system of second-order Forward-Backward SDEs. However, so far, these methods suffer from compounding errors resulting in lack of scalability. In this paper, we propose a deep learning based algorithm that leverages the second-order FBSDE representation and LSTM-based recurrent neural networks to not only solve such stochastic optimal control problems but also overcome the problems faced by traditional approaches, including scalability. The resulting control algorithm is tested on a high-dimensional linear system and three nonlinear systems from robotics and biomechanics in simulation to demonstrate feasibility and out-performance against previous methods.}}
+
+
+@inproceedings{Kim20b,
+	Author={Jeongho Kim and Insoon Yang},
+	Title={Hamilton-Jacobi-Bellman Equations for Q-Learning in Continuous Time},
+	Pages={739--748},
+	Abstract={In this paper, we introduce Hamilton-Jacobi-Bellman (HJB) equations for Q-functions in continuous time optimal control problems with Lipschitz continuous controls. The standard Q-function used in reinforcement learning is shown to be the unique viscosity solution of the HJB equation. A necessary and sufficient condition for optimality is provided using the viscosity solution framework. By using the HJB equation, we develop a Q-learning method for continuous-time dynamical systems. A DQN-like algorithm is also proposed for high-dimensional state and control spaces. The performance of the proposed Q-learning algorithm is demonstrated using 1-, 10- and 20-dimensional dynamical systems.}}
+
+
+@inproceedings{Song20,
+	Author={Changkyu Song and Abdeslam Boularias},
+	Title={Identifying Mechanical Models of Unknown Objects with Differentiable Physics Simulations},
+	Pages={749--760},
+	Abstract={This paper proposes a new method for manipulating unknown objects through a sequence of non-prehensile actions that displace an object from its initial configuration to a given goal configuration on a flat surface. The proposed method leverages recent progress in differentiable physics models to identify unknown mechanical properties of manipulated objects, such as inertia matrix, friction coefficients and external forces acting on the object. To this end, a recently proposed differentiable physics engine for two-dimensional objects is adopted in this work and extended to deal forces in the three-dimensional space. The proposed model identification technique analytically computes the gradient of the distance between forecasted poses of objects and their actual observed poses, and utilizes that gradient to search for values of the mechanical properties that reduce the reality gap.}}
+
+
+@inproceedings{Lambert20,
+	Author={Nathan Lambert and Brandon Amos and Omry Yadan and Roberto Calandra},
+	Title={Objective Mismatch in Model-based Reinforcement Learning},
+	Pages={761--770},
+	Abstract={Model-based reinforcement learning (MBRL) has been shown to be a powerful framework for data-efficiently learning control of continuous tasks. Recent work in MBRL has mostly focused on using more advanced function approximators and planning schemes, with little development of the general framework.In this paper, we identify a fundamental issue of the standard MBRL framework -- what we call the objective mismatch issue. Objective mismatch arises when one objective is optimized in the hope that a second, often uncorrelated, metric will also be optimized. In the context of MBRL, we characterize the objective mismatch between training the forward dynamics model w.r.t. the likelihood of the one-step ahead prediction, and the overall goal of improving performance on a downstream control task. For example, this issue can emerge with the realization that dynamics models effective for a specific task do not necessarily need to be globally accurate, and vice versa globally accurate models might not be sufficiently accurate locally to obtain good control performance on a specific task. In our experiments, we study this objective mismatch issue and demonstrate that the likelihood of one-step ahead predictions is not always correlated with control performance. This observation highlights a critical limitation in the MBRL framework which will require further research to be fully understood and addressed. We propose an initial method to mitigate the mismatch issue by re-weighting dynamics model training. Building on it, we conclude with a discussion about other potential directions of research for addressing this issue.}}
+
+
+@inproceedings{Sintov20,
+	Author={Avishai Sintov and Andrew Kimmel and Bowen Wen and Abdeslam Boularias and Kostas Bekris},
+	Title={Tools for Data-driven Modeling of Within-Hand Manipulation with Underactuated Adaptive Hands},
+	Pages={771--780},
+	Abstract={Precise in-hand manipulation is an important skill for a robot to perform tasks in human environments. Practical robotic hands must be low-cost, easy to control and capable. 3D-printed underactuated adaptive hands provide such properties as they are cheap to fabricate and adapt to objects of uncertain geometry with stable grasps. Challenges still remain, however, before such hands can attain human-like performance due to complex dynamics and contacts. In particular, useful models for planning, control or model-based reinforcement learning are still lacking. Recently, data-driven approaches for such models have shown promise. This work provides the first large public dataset of real within-hand manipulation that facilitates building such models, along with baseline data-driven modeling results. Furthermore, it contributes ROS-based physics-engine model of such hands for independent data collection, experimentation and sim-to-reality transfer work.
+}}
+
+
+@inproceedings{Khojasteh20,
+	Author={Mohammad Javad Khojasteh and Vikas Dhiman and Massimo Franceschetti and Nikolay Atanasov},
+	Title={Probabilistic Safety Constraints for Learned High Relative Degree System Dynamics},
+	Pages={781--792},
+	Abstract={This paper focuses on learning a model of system dynamics online while satisfying safety constraints. Our motivation is to avoid offline system identification or hand-specified dynamics models and allow a system to safely and autonomously estimate and adapt its own model during online operation. Given streaming observations of the system state, we use Bayesian learning to obtain a distribution over the system dynamics. In turn, the distribution is used to optimize the system behavior and ensure safety with high probability, by specifying a chance constraint over a control barrier function.}}
+
+
+@inproceedings{Summers20,
+	Author={Colin Summers and Kendall Lowrey and Aravind Rajeswaran and Siddhartha Srinivasa and Emanuel Todorov},
+	Title={Lyceum: An efficient and scalable ecosystem for robot learning},
+	Pages={793--803},
+	Abstract={We introduce Lyceum, a high-performance computational ecosystem for robot learning. Lyceum is built on top of the Julia programming language and the MuJoCo physics simulator, combining the ease-of-use of a high-level programming language with the performance of native C. In addition,Lyceum has a straightforward API to support parallel computation across multiple cores and machines.  Overall, depending on the complexity of the environment,Lyceum is 5-30X faster compared to other popular abstractions like OpenAI’s Gym and DeepMind’s dm-control. This substantially reduces training time for various reinforcement learning algorithms; and is also fast enough to support real-time model predictive control through MuJoCo.  The code, tutorials, and demonstration videos can be found at: www.lyceum.ml.}}
+
+
+@inproceedings{Sutanto20,
+	Author={Giovanni Sutanto and Austin Wang and Yixin Lin and Mustafa Mukadam and Gaurav Sukhatme and Akshara Rai and Franziska Meier},
+	Title={Encoding Physical Constraints in Differentiable Newton-Euler Algorithm},
+	Pages={804--813},
+	Abstract={The recursive Newton-Euler Algorithm (RNEA) is a popular technique in robotics for computing the dynamics of robots. The computed dynamics can then be used for torque control with inverse dynamics, or for forward dynamics computations. RNEA can be framed as a differentiable computational graph, enabling the dynamics parameters of the robot to be learned from data. However, the dynamics parameters learned in this manner can be physically implausible. In this work, we incorporate physical constraints in the learning by adding structure to the learned parameters. This results in a framework that can learn physically plausible dynamics, improving the training speed as well as generalization of the learned dynamics models. We evaluate our method on real-time inverse dynamics predictions of a 7 degree of freedom robot arm, both in simulation and on the real robot. Our experiments study a spectrum of structure added to learned dynamics, and compare their performance and generalization.}}
+
+
+@inproceedings{Li20b,
+	Author={Yingying Li and Yujie Tang and Runyu Zhang and Na Li},
+	Title={Distributed Reinforcement Learning for Decentralized Linear Quadratic Control: A Derivative-Free Policy Optimization Approach},
+	Pages={814--814},
+	Abstract={This paper considers a distributed reinforcement learning problem for decentralized linear quadratic control with partial state observations and local costs. We propose a Zero-Order Distributed Policy Optimization algorithm (ZODPO) that learns linear local controllers in a distributed fashion, leveraging the ideas of policy gradient, zero-order optimization and consensus algorithms. In ZODPO, each agent estimates the global cost by consensus, and then conducts local policy gradient in parallel based on zero-order gradient estimation. ZODPO only requires limited communication and storage even in large-scale systems. Further, we investigate the nonasymptotic performance of ZODPO and show that the sample complexity to approach a stationary point is polynomial with the error tolerance's inverse and the problem dimensions, demonstrating the scalability of ZODPO. We also show that the controllers generated throughout ZODPO are stabilizing controllers with high probability. Lastly, we numerically test ZODPO on a multi-zone HVAC system. }}
+
+
+@inproceedings{Seyde20,
+	Author={Tim Seyde and Wilko Schwarting and Sertac Karaman and Daniela Rus},
+	Title={Learning to Plan via Deep Optimistic Value Exploration},
+	Pages={815--825},
+	Abstract={Deep exploration requires coordinated long-term planning. We present a model-based reinforcement learning algorithm that guides policy learning through a value function that exhibits optimism in the face of uncertainty. We capture uncertainty over values by combining predictions from an ensemble of models and formulate an upper confidence bound (UCB) objective to recover optimistic estimates. Training the policy on ensemble rollouts with the learned value function as the terminal cost allows for projecting long-term interactions into a limited planning horizon, thus enabling deep optimistic exploration. We do not assume a priori knowledge of either the dynamics or reward function. We demonstrate that our approach can accommodate both dense and sparse reward signals, while improving sample complexity on a variety of benchmarking tasks.}}
+
+
+@inproceedings{Gahlawat20,
+	Author={Aditya Gahlawat and Pan Zhao and Andrew Patterson and Naira Hovakimyan and Evangelos Theodorou},
+	Title={L1-GP: L1 Adaptive Control with Bayesian Learning},
+	Pages={826--837},
+	Abstract={We present L1-GP, an architecture based on L1 adaptive control and Gaussian Process Regression (GPR) for safe simultaneous control and learning. On one hand, the L1 adaptive control provides stability and transient performance guarantees, which allows for GPR to efficiently and safely learn the uncertain dynamics. On the other hand, the learned dynamics can be conveniently incorporated into the L1 control architecture without sacrificing robustness and tracking performance. Subsequently, the learned dynamics can lead to less conservative designs for performance/robustness tradeoff. We illustrate the efficacy of the proposed architecture via numerical simulations.}}
+
+
+@inproceedings{Allibhoy20,
+	Author={Ahmed Allibhoy and Jorge Cortes},
+	Title={Data-Driven Distributed Predictive Control via Network Optimization},
+	Pages={838--839},
+	Abstract={We consider a networked linear system where system matrices are unknown to the individual agents but sampled data is available to them.  We propose a data-driven method for designing a distributed linear-quadratic controller where agents learn a non-parametric system model from a single sample trajectory in which nodes can predict future trajectories using only data available to themselves and their neighbors. Based on this system representation, we propose a control scheme where a network optimization problem is solved in a receding horizon manner. We show that the proposed control scheme is stabilizing and validate our results through numerical experiments.}}
+
+
+@inproceedings{Bhardwaj20,
+	Author={Mohak Bhardwaj and Ankur Handa and Dieter Fox and Byron Boots},
+	Title={Information Theoretic Model Predictive Q-Learning},
+	Pages={840--850},
+	Abstract={Model-free Reinforcement Learning (RL) works well when experience can be collected cheaply and model-based RL is effective when system dynamics can be modeled accurately. However, both assumptions can be violated in real world problems such as robotics, where querying the system can be expensive and real-world dynamics can be difficult to model. In contrast to RL, Model Predictive Control (MPC) algorithms use a simulator to optimize a simple policy class online, constructing a closed-loop controller that can effectively contend with real-world dynamics. MPC performance is usually limited by factors such as model bias and the limited horizon of optimization. In this work, we present a novel theoretical connection between information theoretic MPC and entropy regularized RL and develop a Q-learning algorithm that can leverage biased models. We validate the proposed algorithm on sim-to-sim control tasks to demonstrate the improvements over optimal control and reinforcement learning from scratch. Our approach paves the way for deploying reinforcement learning algorithms on real systems in a systematic manner.}}
+
+
+@inproceedings{Foster20,
+	Author={Dylan Foster and Tuhin Sarkar and Alexander Rakhlin},
+	Title={Learning nonlinear dynamical systems from a single trajectory},
+	Pages={851--861},
+	Abstract={We introduce algorithms for learning nonlinear dynamical systems of theform $x_{t+1}=\sigma(\Theta{}x_t)+\varepsilon_t$, where $\Theta$ is a weightmatrix, $\sigma$ is a nonlinear monotonic link function, and$\varepsilon_t$ is a mean-zero noise process. When the link function is known, wegive an algorithm that recovers the weight matrix $\Theta$ from a single trajectorywith optimal sample complexity and linear running time. The algorithmsucceeds under weaker statistical assumptions than in previous work, and inparticular i) does not require a bound on the spectral norm of the weightmatrix $\Theta$ (rather, it depends on a generalization of thespectral radius) and ii) works when the link function is the ReLU. Our analysis has three keycomponents: i) We show how \emph{sequential Rademacher complexities} can beused to provide generalization guarantees for general dynamicalsystems, ii) we give a general recipe whereby global stability fornonlinear dynamical systems can be used to certify that the state-vector covariance is well-conditioned, and iii) using these tools, we extend well-known algorithms for efficiently learning generalized linear models to the dependent setting.}}
+
+
+@inproceedings{Gong20,
+	Author={Hao Gong and Mengdi Wang},
+	Title={A Duality Approach for Regret Minimization in Average-Award Ergodic Markov Decision Processes},
+	Pages={862--883},
+	Abstract={In light of the Bellman duality, we propose a novel value-policy gradient algorithm to explore and act in infinite-horizon Average-reward Markov Decision Process (AMDP) and show that it has sublinear regret. The algorithm is motivated by the Bellman saddle point formulation. It learns the optimal state-action distribution, which encodes a randomized policy, by interacting with the environment along a single trajectory and making primal-dual updates. The key to the analysis is to establish a connection between the min-max duality gap of Bellman saddle point and the cumulative regret of the learning agent.
+ We show that, for ergodic AMDPs with finite state space $\mathcal{S}$ and action space $\mathcal{A}$ and uniformly bounded mixing times, the algorithm's $T$-time step regret is
+ $$
+  R(T)=\tilde{\mathcal{O}}\left( \left(t_{mix}^*\right)^2 \tau^{\frac{3}{2}} \sqrt{(\tau^3 + |\mathcal{A}|) |\mathcal{S}| T} \right),
+ $$
+where $t_{mix}^*$ is the worst-case mixing time, $\tau$ is an ergodicity parameter, $T$ is the number of time steps and $\tilde{\mathcal{O}}$ hides polylog factors.}}
+
+
+@inproceedings{Seidman20,
+	Author={Jacob H. Seidman and Mahyar Fazlyab and Victor M. Preciado and George J. Pappas},
+	Title={Robust Deep Learning as Optimal Control: Insights and Convergence Guarantees},
+	Pages={884--893},
+	Abstract={The fragility of deep neural networks to adversarially-chosen inputs has motivated the need to revisit deep learning algorithms. Including adversarial examples during training is a popular defense mechanism against adversarial attacks. This mechanism can be formulated as a min-max optimization problem, where the adversary seeks to maximize the loss function using an iterative first-order algorithm while the learner attempts to minimize it. However, finding adversarial examples in this way causes excessive computational overhead during training. By interpreting the min-max problem as an optimal control problem, it has recently been shown that one can exploit the compositional structure of neural networks in the optimization problem to  improve the training time significantly. In this paper, we provide the first convergence analysis of this adversarial training algorithm by combining techniques from robust optimal control and inexact oracle methods in optimization. Our analysis sheds light on how the hyperparameters of the algorithm affect the its stability and convergence. We support our insights with experiments on a robust classification problem.}}
+
+
+@inproceedings{Arcari20,
+	Author={Elena Arcari and Lukas Hewing and Max Schlichting and Melanie Zeilinger},
+	Title={Dual Stochastic MPC for Systems with Parametric and Structural Uncertainty},
+	Pages={894--903},
+	Abstract={Designing controllers for systems affected by model uncertainty can prove to be a challenge, especially when seeking the optimal compromise between the conflicting goals of identification and control. This trade-off is explicitly taken into account in the dual control problem, for which the exact solution is provided by stochastic dynamic programming. Due to its computational intractability, we propose a sampling-based approximation for systems affected by both parametric and structural model uncertainty. The approach proposed in this paper separates the prediction horizon in a dual and an exploitation part. The dual part is formulated as a scenario tree that actively discriminates among a set of potential models while learning unknown parameters. In the exploitation part,  achieved information is fixed for each scenario, and open-loop control sequences are computed for the remainder of the horizon. As a result, we solve one optimization problem over a collection of control sequences for the entire horizon, explicitly considering the knowledge gained in each scenario, leading to a dual model predictive control formulation.}}
+
+
+@inproceedings{Abdulsamad20,
+	Author={Hany Abdulsamad and Jan Peters},
+	Title={Hierarchical Decomposition of Nonlinear Dynamics and Control for System Identification and Policy Distillation},
+	Pages={904--914},
+	Abstract={Control of nonlinear systems with unknown dynamics is a major challenge on the road to fully autonomous agents. Current trends in reinforcement learning (RL) focus on complex representations of dynamics and policies. Such approaches have yielded impressive results in solving a variety of hard control tasks. However, this new sophistication has come with the cost of an overall reduction in our ability to interpret the resulting policies from a classical perspective, and the need for extremely over-parameterized controllers. In this paper, we take inspiration from the control community and apply the principles of hybrid switching systems, in order to break down complex representations into simpler components. We exploit the rich representational power of probabilistic graphical models and derive a new expectation-maximization (EM) algorithm for learning a generative model and automatically decomposing nonlinear dynamics into stochastic switching linear dynamical systems. Moreover, we show how this framework of probabilistic switching models enables extracting hierarchies of Markovian and auto-regressive locally linear controllers from nonlinear experts in an imitation learning scenario.}}
+
+
+@inproceedings{Zhu20,
+	Author={Jia-Jie Zhu and Bernhard Schoelkopf and Moritz Diehl},
+	Title={A Kernel Mean Embedding Approach to Reducing Conservativeness in Stochastic Programming and Control},
+	Pages={915--923},
+	Abstract={In this paper, we apply kernel mean embedding methods to sample-based stochastic optimization and control. Specifically, we use the reduced-set expansion method as a way to discard sampled scenarios. The effect of such constraint removal is improved optimality and decreased conservativeness. This is achieved by solving a distributional-distance-regularized optimization problem. We demonstrated this optimization formulation is well-motivated in theory, computationally tractable, and effective in numerical algorithms. }}
+
+
+@inproceedings{Bedi20,
+	Author={Amrit Singh Bedi and Dheeraj Peddireddy and Vaneet Aggarwal and Alec Koppel},
+	Title={Efficient Large-Scale Gaussian Process Bandits by Believing only Informative Actions},
+	Pages={924--934},
+	Abstract={Bayesian optimization is a framework for global search via maximum a posteriori updates rather than simulated annealing, and has gained prominence in tuning the hyper-parameters of machine learning algorithms and more broadly, in decision-making under uncertainty. In this work, we cast Bayesian optimization as a multi-armed bandit problem, where the payoff function is sampled from a Gaussian process (GP). Further, we focus on action selections via the GP upper confidence bound (UCB). While numerous prior works use GPs in bandit settings, they do not apply to settings where the total number of iterations $T$ may be large-scale, as the complexity of computing the posterior parameters scales cubically with the number of past observations. To circumvent this computational burden, we propose a simple statistical test: only incorporate an action into the GP posterior when its conditional entropy exceeds an $\epsilon$ threshold. Doing so permits us to derive sublinear regret bounds of GP bandit algorithms up to factors depending on the compression parameter $\epsilon$ for both discrete and continuous action sets. Moreover, the complexity of the GP posterior remains provably finite. Experimentally, we observe state of the art accuracy and complexity tradeoffs for GP bandit algorithms on various hyper-parameter tuning tasks, suggesting the merits of managing the complexity of  GPs in bandit settings.}}
+
+
+@inproceedings{Yang20b,
+	Author={Ge Yang and Amy Zhang and Ari Morcos and Joelle Pineau and Pieter Abbeel and Roberto Calandra},
+	Title={Plan2Vec: Unsupervised Representation Learning by Latent Plans},
+	Pages={935--946},
+	Abstract={In this paper, we introducePlan2Vec, an model-based method to learn state representation fromsequences of off-policy observation data via planning. In contrast to prior methods, plan2vec doesnot require grounding via expert trajectories or actions, opening it up to many unsupervised learningscenarios. When applied to control, plan2vec learns a representation that amortizes the planningcost, enabling test time planning complexity that is linear in planning depth rather than exhaustiveover the entire state space. We demonstrate the effectiveness of Plan2Vec on one simulated andtwo real-world image datasets, showing that Plan2Vec can effectively acquire representations thatcarry long-range structure to accelerate planning. Additional results and videos can be found athttps://sites.google.com/view/plan2vec}}
+
+
+@inproceedings{JanschPorto20,
+	Author={Joao Paulo Jansch-Porto and Bin Hu and Geir Dullerud},
+	Title={Policy Learning of MDPs with Mixed Continuous/Discrete Variables: A Case Study on  Model-Free Control of Markovian Jump Systems},
+	Pages={947--957},
+	Abstract={Markovian jump linear systems (MJLS) are an important class of dynamical systems that arise in many control applications. In this paper, we introduce the problem of controlling unknown MJLS as a new reinforcement learning benchmark for Markov decision processes with mixed continuous/discrete state variables. Compared with the traditional linear quadratic regulator (LQR), our proposed problem leads to a special hybrid MDP (with mixed continuous and discrete variables) and poses significant new challenges due to the appearance of an underlying Markov jump parameter governing the mode of the system dynamics. Specifically, the state of a MJLS does not form a Markov chain and hence one cannot study the MJLS control problem as a MDP with solely continuous state variable. However, one can augment the state and the jump parameter to obtain a MDP with a mixed continuous-discrete state space. We discuss how control theory sheds light on the policy parameterization of such hybrid MDPs. Using a recently developed policy gradient results for MJLS, we show that we can use data-driven methods to solve the discounted cost version of the LQR problem. We modify the widely used natural policy gradient method to directly learn the optimal state feedback control policy for MJLS without identifying either the system dynamics or the transition probability of the switching parameter.
+We implement the (data-driven) natural policy gradient method on different MJLS examples. Our simulation results suggest that the natural gradient method can efficiently learn the optimal controller for MJLS with unknown dynamics. }}
+
+
+@inproceedings{Singh20,
+	Author={Rahul Singh and Qinsheng Zhang and Yongxin Chen},
+	Title={Improving Robustness via Risk Averse Distributional Reinforcement Learning},
+	Pages={958--968},
+	Abstract={One major obstacle that precludes the success of reinforcement learning in real-world
+applications is the lack of robustness, either to model uncertainties or external disturbances, of the trained policies. Robustness is critical when the policies are trained in simulations instead of real world environment. In this work, we propose a risk-aware algorithm to learn robust policies in order to bridge the gap between simulation training and real-world implementation. Our algorithm is based on recently discovered distributional RL framework. We incorporate CVaR risk measure in sample based distributional policy gradients (SDPG) for learning risk-averse policies to achieve robustness against a range of system disturbances. We validate the robustness of risk-aware SDPG on multiple environments.}}
+
+
+@inproceedings{Pertsch20,
+	Author={Karl Pertsch and Oleh Rybkin and Jingyun Yang and Konstantinos Derpanis and Kostas Daniilidis and Joseph Lim and Andrew Jaegle},
+	Title={Keyframing the Future: Keyframe Discovery for Visual Prediction and Planning},
+	Pages={969--979},
+	Abstract={To flexibly and efficiently reason about dynamics of temporal sequences, abstract representations that compactly represent the important information in the sequence are needed. One way of constructing such representations is by focusing on the important events in a sequence. In this paper, we propose a model that learns both to discover such key events (or keyframes) as well as to represent the sequence in terms of them.  We do so using a hierarchical Keyframe-Inpainter (KeyIn) model that first generates keyframes and their temporal placement and then inpaints the sequences between keyframes. We propose a fully differentiable formulation for efficiently learning the keyframe placement. We show that KeyIn finds informative keyframes in several datasets with diverse dynamics. When evaluated on a planning task, KeyIn outperforms other recent proposals for learning hierarchical representations.}}
+
+
+@inproceedings{Usmanova20,
+	Author={Ilnura Usmanova and Andreas Krause and Maryam Kamgarpour},
+	Title={Safe non-smooth black-box optimization with application to policy search},
+	Pages={980--989},
+	Abstract={For safety-critical black-box optimization tasks, observations of the constraints and the objective are often noisy and available only for the feasible points. We propose an approach based on log barriers to find a local solution of a non-convex non-smooth black-box optimization problem $\min f^0(x)$ subject to  $f^i(x)\leq 0, i = 1,\ldots, m$, at the same time, guaranteeing constraint satisfaction while learning with high probability. Our proposed algorithm exploits noisy observations to iteratively improve on an initial safe point until convergence.  We derive the convergence rate and prove safety of our algorithm. We demonstrate its performance in an application to an iterative control design problem.}}
+
+
+@inproceedings{Castaneda20,
+	Author={Fernando Casta{\~n}eda and Mathias Wulfman and Ayush Agrawal and Tyler Westenbroek and Shankar Sastry and Claire Tomlin and Koushil Sreenath},
+	Title={Improving Input-Output Linearizing Controllers for Bipedal Robots via Reinforcement Learning},
+	Pages={990--999},
+	Abstract={The need of precise dynamics models and not being able to account for input constraints are two of the main drawbacks of input-output linearizing controllers. Model uncertainty is common in almost every robotic application, and input saturation is present in every real world system. In this paper, we address both challenges for the specific case of bipedal robots’ control by the use of reinforcement learning techniques. We demonstrate the performance of the designed controller for different uncertain scenarios on the five-link planar robot RABBIT. The advantages of the designed controller are highlighted and a comparison with a known effective adaptive controller is presented.}}
+
+
+@inproceedings{Falsone20,
+	Author={Alessandro Falsone and Federico Molinari and Maria Prandini},
+	Title={Uncertain multi-agent MILPs: A data-driven decentralized solution with probabilistic feasibility guarantees},
+	Pages={1000--1009},
+	Abstract={We consider uncertain multi-agent optimization problems that are formulated as Mixed Integer Linear Programs (MILPs) with an almost separable structure. Specifically, agents have their own cost function and constraints, and need to set their local decision vector subject to coupling constraints due to shared resources. The problem is affected by uncertainty that is only known from data. A scalable decentralized approach to tackle the combinatorial complexity of constraint-coupled multi-agent MILPs has been recently introduced in the literature. However, the presence of uncertainty has been addressed only in a distributed convex optimization framework, i.e., without integer decision variables. This work fills in this gap by proposing a data-driven decentralized scheme to determine a solution with probabilistic feasibility guarantees that depend on the size of the data-set.}}

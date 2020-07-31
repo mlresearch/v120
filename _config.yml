@@ -1,0 +1,81 @@
+---
+booktitle: Proceedings of the 2nd Conference on Learning for Dynamics and Control
+shortname: L4DC
+url: http://proceedings.mlr.press
+volume: 120
+year: '2020'
+start: 2020-06-10
+end: 2020-06-11
+published: 2020-07-31
+layout: proceedings
+series: Proceedings of Machine Learning Research
+id: L4DC2020
+month: 0
+cycles: false
+bibtex_editor: Bayen, Alexandre M. and Jadbabaie, Ali and Pappas, George and Parrilo,
+  Pablo A. and Recht, Benjamin and Tomlin, Claire and Zeilinger, Melanie
+editor:
+- given: Alexandre M.
+  family: Bayen
+- given: Ali
+  family: Jadbabaie
+- given: George
+  family: Pappas
+- given: Pablo A.
+  family: Parrilo
+- given: Benjamin
+  family: Recht
+- given: Claire
+  family: Tomlin
+- given: Melanie
+  family: Zeilinger
+title: Proceedings of Machine Learning Research
+description: |
+  Proceedings of the 2nd Conference on Learning for Dynamics and Control
+    Held in The Cloud on 10-11 June 2020
+
+  Published as Volume 120 by the Proceedings of Machine Learning Research on 31 July 2020.
+
+  Volume Edited by:
+    Alexandre M. Bayen
+    Ali Jadbabaie
+    George Pappas
+    Pablo A. Parrilo
+    Benjamin Recht
+    Claire Tomlin
+    Melanie Zeilinger
+
+  Series Editors:
+    Neil D. Lawrence
+    Mark Reid
+date_str: 10--11 Jun
+baseurl: "/v120"
+twitter_username: MLResearchPress
+github_username: mlresearch
+markdown: kramdown
+plugins:
+- jekyll-remote-theme
+remote_theme: lawrennd/proceedings
+permalink: "/:title.html"
+ghub:
+  edit: true
+  repository: v120
+display:
+  copy_button:
+    bibtex: true
+    endnote: true
+    apa: true
+  comments: false
+email: ''
+conference:
+  name: Learning for Dynamics and Control
+  url: 
+  location: The Cloud
+  dates:
+  - 2020-06-10
+  - 2020-06-11
+analytics:
+  google:
+    tracking_id: UA-92432422-1
+# Site settings
+# Auto generated from /Users/neil/mlresearch/v120/l4dc2020.bib
