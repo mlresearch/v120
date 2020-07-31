@@ -18,6 +18,7 @@ abstract: Control of nonlinear systems with unknown dynamics is a major challeng
   in an imitation learning scenario.
 layout: inproceedings
 series: Proceedings of Machine Learning Research
+issn: 2640-3498
 id: abdulsamad20a
 month: 0
 tex_title: Hierarchical Decomposition of Nonlinear Dynamics and Control for System

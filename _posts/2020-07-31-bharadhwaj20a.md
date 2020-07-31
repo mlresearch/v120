@@ -15,6 +15,7 @@ abstract: Recent works in high-dimensional model-predictive control and model-ba
   descent steps in optimizing the action sequence.
 layout: inproceedings
 series: Proceedings of Machine Learning Research
+issn: 2640-3498
 id: bharadhwaj20a
 month: 0
 tex_title: Model-Predictive Planning via Cross-Entropy and Gradient-Based Optimization

@@ -10,6 +10,7 @@ abstract: Despite the availability of ever more data enabled through modern sens
   benchmark.
 layout: inproceedings
 series: Proceedings of Machine Learning Research
+issn: 2640-3498
 id: buisson-fenet20a
 month: 0
 tex_title: Actively Learning Gaussian Process Dynamics

@@ -23,6 +23,7 @@ abstract: 'Markovian jump linear systems (MJLS) are an important class of dynami
   learn the optimal controller for MJLS with unknown dynamics. '
 layout: inproceedings
 series: Proceedings of Machine Learning Research
+issn: 2640-3498
 id: jansch-porto20a
 month: 0
 tex_title: 'Policy Learning of MDPs with Mixed Continuous/Discrete Variables: A Case

@@ -14,6 +14,7 @@ abstract: Signal temporal logic (STL) is an expressive language to specify time-
   technique via simulations.
 layout: inproceedings
 series: Proceedings of Machine Learning Research
+issn: 2640-3498
 id: venkataraman20a
 month: 0
 tex_title: Tractable Reinforcement Learning of Signal Temporal Logic Objectives

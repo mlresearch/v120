@@ -16,6 +16,7 @@ abstract: Model Predictive Control (MPC) is a powerful control technique that ha
   robot.
 layout: inproceedings
 series: Proceedings of Machine Learning Research
+issn: 2640-3498
 id: karnchanachari20a
 month: 0
 tex_title: 'Practical Reinforcement Learning For MPC: Learning from sparse objectives

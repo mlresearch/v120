@@ -16,6 +16,7 @@ abstract: 'High fidelity behavior prediction of intelligent agents is critical i
   outperforms existing methods as demonstrated in experiments.'
 layout: inproceedings
 series: Proceedings of Machine Learning Research
+issn: 2640-3498
 id: abuduweili20a
 month: 0
 tex_title: Robust Online Model Adaptation by Extended Kalman Filter with Exponential

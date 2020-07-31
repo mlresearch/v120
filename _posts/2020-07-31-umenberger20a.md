@@ -12,6 +12,7 @@ abstract: Recent work by Mania et al. has proved that certainty equivalent contr
   is illustrated on a numerical example.
 layout: inproceedings
 series: Proceedings of Machine Learning Research
+issn: 2640-3498
 id: umenberger20a
 month: 0
 tex_title: Optimistic robust linear quadratic dual control

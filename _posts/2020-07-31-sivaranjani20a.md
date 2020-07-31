@@ -18,6 +18,7 @@ abstract: 'In model-based approaches to learning for controller design, it is im
   local passivity of the unknown nonlinear system. '
 layout: inproceedings
 series: Proceedings of Machine Learning Research
+issn: 2640-3498
 id: sivaranjani20a
 month: 0
 tex_title: Data-driven Identification of Approximate Passive Linear Models for Nonlinear

@@ -14,6 +14,7 @@ abstract: We propose a new model-based unsupervised learning method, called VarN
   model order reduction of PDEs.
 layout: inproceedings
 series: Proceedings of Machine Learning Research
+issn: 2640-3498
 id: khodayi-mehr20a
 month: 0
 tex_title: 'VarNet: Variational Neural Networks for the Solution of Partial Differential

@@ -17,6 +17,7 @@ abstract: This paper proposes an Adaptive Stochastic Model Predictive Control (M
   during control design.
 layout: inproceedings
 series: Proceedings of Machine Learning Research
+issn: 2640-3498
 id: bujarbaruah20a
 month: 0
 tex_title: 'Exploiting Model Sparsity in Adaptive MPC: A Compressed Sensing Viewpoint'
