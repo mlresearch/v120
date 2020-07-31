@@ -20,12 +20,12 @@ lastpage: 560
 page: 550-560
 order: 550
 cycles: false
-bibtex_author: Umenberger, Jack and Schon, Thomas B
+bibtex_author: Umenberger, Jack and Sch\"on, Thomas B.
 author:
 - given: Jack
   family: Umenberger
-- given: Thomas B
-  family: Schon
+- given: Thomas B.
+  family: Schön
 date: 2020-07-31
 address: 
 publisher: PMLR
