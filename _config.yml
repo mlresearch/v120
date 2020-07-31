@@ -1,7 +1,6 @@
 ---
 booktitle: Proceedings of the 2nd Conference on Learning for Dynamics and Control
 shortname: L4DC
-url: http://proceedings.mlr.press
 volume: 120
 year: '2020'
 start: 2020-06-10
@@ -49,6 +48,7 @@ description: |
     Neil D. Lawrence
     Mark Reid
 date_str: 10--11 Jun
+url: http://proceedings.mlr.press
 baseurl: "/v120"
 twitter_username: MLResearchPress
 github_username: mlresearch
@@ -69,7 +69,7 @@ display:
 email: ''
 conference:
   name: Learning for Dynamics and Control
-  url: 
+  url: http://l4dc.org
   location: The Cloud
   dates:
   - 2020-06-10
@@ -78,4 +78,4 @@ analytics:
   google:
     tracking_id: UA-92432422-1
 # Site settings
-# Auto generated from /Users/neil/mlresearch/v120/l4dc2020.bib
+# Original source:  /Users/neil/mlresearch/v120/l4dc2020.bib
