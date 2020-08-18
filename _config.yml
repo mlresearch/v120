@@ -1,5 +1,6 @@
 ---
 booktitle: Proceedings of the 2nd Conference on Learning for Dynamics and Control
+orig_bibfile: "/Users/neil/mlresearch/v120/l4dc2020.bib"
 shortname: L4DC
 volume: 120
 year: '2020'
@@ -57,6 +58,10 @@ baseurl: "/v120"
 twitter_username: MLResearchPress
 github_username: mlresearch
 markdown: kramdown
+exclude:
+- README.md
+- Gemfile
+- ".gitignore"
 style: pmlr
 plugins:
 - jekyll-feed
@@ -84,6 +89,5 @@ conference:
 analytics:
   google:
     tracking_id: UA-92432422-1
-orig_bibfile: "/Users/neil/mlresearch/v120/l4dc2020.bib"
 # Site settings
 # Original source:  /Users/neil/mlresearch/v120/l4dc2020.bib
