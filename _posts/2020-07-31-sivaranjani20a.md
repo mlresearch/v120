@@ -14,9 +14,9 @@ lastpage: 339
 page: 338-339
 order: 338
 cycles: false
-bibtex_author: Sivaranjani, S and Agarwal, Etika and Gupta, Vijay
+bibtex_author: Sivaranjani, S. and Agarwal, Etika and Gupta, Vijay
 author:
-- given: S
+- given: S.
   family: Sivaranjani
 - given: Etika
   family: Agarwal
