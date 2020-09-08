@@ -1,5 +1,5 @@
 ---
-title: Model-Predictive Planning via Cross-Entropy and Gradient-Based Optimization
+title: Model-Predictive Control via Cross-Entropy and Gradient-Based Optimization
 abstract: Recent works in high-dimensional model-predictive control and model-based
   reinforcement learning with learned dynamics and reward models have resorted to
   population-based optimization methods, such as the Cross-Entropy Method (CEM), for
@@ -18,7 +18,7 @@ series: Proceedings of Machine Learning Research
 issn: 2640-3498
 id: bharadhwaj20a
 month: 0
-tex_title: Model-Predictive Planning via Cross-Entropy and Gradient-Based Optimization
+tex_title: Model-Predictive Control via Cross-Entropy and Gradient-Based Optimization
 firstpage: 277
 lastpage: 286
 page: 277-286
